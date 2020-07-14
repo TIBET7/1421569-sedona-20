@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Дмитрий Жуков](https://up.htmlacademy.ru/adaptive/20/user/1421569).
-* Наставник: `Неизвестно`.
+* Студент: [Dmitriy Zhukov](https://up.htmlacademy.ru/adaptive/20/user/1421569).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
