@@ -12,6 +12,7 @@
         <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип &quot;Седона&quot;">
       </a>
       <nav class="main-nav">
+        <button class="main-nav__close close-button" type="button" aria-label="Закрыть окно"></button>
         <button class="main-nav__toogle" type="button">
           <span class="visually hidden">Открыть меню</span>
         </button>
@@ -36,6 +37,7 @@
 
     <!-- Main -->
     <main class="review">
+      <h1 class="visually-hidden">Отзыв об отелях Седоны</h1>
       <div class="review__image">
         <img class="review__image-background" src="https://via.placeholder.com/320x214" width="320" height="214" alt="Природа в окрестностях Седоны">
         <img class="review__image-text" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
@@ -43,7 +45,7 @@
 
       <!-- Template-section -->
       <section class="template-section">
-        <h1 class="template-section__title">Оставьте свой отзыв</h1>
+        <h2 class="template-section__title">Оставьте свой отзыв</h2>
         <p class="template-section__text">Помогите нашим отелям стать лучше!</p>
         <p class="template-section__text">Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
@@ -123,7 +125,7 @@
         </fieldset>
         <button class="button" type="submit">Отправить отзыв</button>
       </form>
-    </main>
+    </main><!-- ./page-main-->
 
       <!-- Footer -->
       <footer class="page-footer">
@@ -148,6 +150,22 @@
             </a>
           </div>
       </footer>
-    </main><!-- ./page-main-->
+
+    <!-- Modal-failure -->
+    <!-- Template-section -->
+    <section class="template-section modal">
+      <h2 class="template-section__title">Что-то пошло не так!</h2>
+      <p class="template-section__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </section>
+    <button class="button button--failure" type="button">Ок</button>
+
+     <!-- Modal-success -->
+     <!-- Template-section -->
+    <section class="template-section modal">
+      <h2 class="template-section__title">Ваш отзыв отправлен!</h2>
+      <p class="template-section__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    </section>
+    <button class="button" type="button">Закрыть окно</button>
+
   </body>
 </html>
