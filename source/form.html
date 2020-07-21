@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+  </head>
+  <body class="page__body">
+
+    <!-- Header -->
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип &quot;Седона&quot;">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toogle" type="button">
+          <span class="visually hidden">Меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a href="index.html">
+              Главная
+            </a></li>
+            <li class="site-list__item"><a href="photo.html">
+              Фото и видео
+            </a></li>
+            <li class="site-list__item"><a href="form.html">
+              Форма отзыва
+            </a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru">
+              HTML Academy
+            </a></li>
+          </ul>
+        </div><!-- ./main-nav__wrapper-->
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="review">
+      <h1 class="visually-hidden">Отзыв об отелях Седоны</h1>
+
+      <!-- Template-section -->
+      <section class="template-section">
+        <h2 class="template-section__title">Оставьте свой отзыв</h2>
+        <p class="template-section__text">Помогите нашим отелям стать лучше!</p>
+        <p class="template-section__text">Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+
+      <!-- Form -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="review-section">
+          <legend class="review-section__title">
+            Представьтесь:
+          </legend>
+          <label class="review__label">Имя*:
+            <input type="text" name="username" placeholder="Петр" required>
+          </label>
+          <label class="review__label">Фамилия*:
+            <input type="text" name="user-surname"  placeholder="Иванов" required>
+          </label>
+          <label class="review__label">Отчество:
+            <input type="text" name="user-patronymic"  placeholder="Александрович">
+          </label>
+        </fieldset>
+        <fieldset class="review-section">
+          <legend class="review-section__title">
+            Контактная информация:
+          </legend>
+          <label class="review__label">Контактный телефон*:
+            <input type="tel" name="user-phone" placeholder="Введите телефон" required>
+          </label>
+          <label class="review__label">Электронная почта*:
+            <input type="email" name="user-email"  placeholder="Введите e-mail" required>
+          </label>
+        </fieldset>
+        <fieldset class="review-section">
+          <legend class="review-section__title">
+            Ваше общее впечатление:
+          </legend>
+          <label class="review__label">
+            <input type="radio" name="impression" value="positive" checked>
+            Скорее положительное
+          </label>
+          <label class="review__label">
+            <input type="radio" name="impression" value="negative">
+            Скорее отрицательное
+          </label>
+          <label class="review__label">
+            <input type="radio" name="impression" value="uncertain">
+            Затрудняюсь ответить
+          </label>
+        </fieldset>
+        <fieldset class="review-section">
+          <legend class="review-section__title">
+            Посещенные достопримечательности:
+          </legend>
+          <label class="review__label">
+            <input type="checkbox" name="devils-bridge" checked>
+            Мост Дьявола
+          </label>
+          <label class="review__label">
+            <input type="checkbox" name="bell-mountain" checked>
+            Гора-Колокол
+          </label>
+          <label class="review__label">
+            <input type="checkbox" name="slide-park" checked>
+            Слайд-парк
+          </label>
+          <label class="review__label">
+            <input type="checkbox" name="red-mountains">
+            Красные скалы
+          </label>
+        </fieldset>
+        <fieldset class="review-section">
+          <legend class="review-section__title">
+            Опишите свои эмоции:
+          </legend>
+          <label class="review__label">
+            <textarea name="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+        </fieldset>
+        <button class="button" type="submit">Отправить отзыв</button>
+      </form>
+    </main><!-- ./page-main-->
+
+      <!-- Footer -->
+      <footer class="page-footer">
+          <div class="page-footer__social social">
+            <h2 class="social__title">#VisitSedona</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">Наш Твиттер</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">Наш Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">Наш Ютуб-канал</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/svg/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            </a>
+          </div>
+      </footer>
+
+    <!-- Modal-failure -->
+    <!-- Template-section -->
+    <section class="template-section modal">
+      <h2 class="template-section__title">Что-то пошло не так!</h2>
+      <p class="template-section__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button button--failure" type="button">Ок</button>
+    </section>
+
+
+     <!-- Modal-success -->
+     <!-- Template-section -->
+    <section class="template-section modal">
+      <h2 class="template-section__title">Ваш отзыв отправлен!</h2>
+      <p class="template-section__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button" type="button">Закрыть окно</button>
+    </section>
+
+
+  </body>
+</html>
