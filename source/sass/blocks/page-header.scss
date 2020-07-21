@@ -1,0 +1,27 @@
+.page-header {
+  min-height: 56px;
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+
+    content: "";
+    width: 22px;
+    height: 23px;
+
+    background:  url("../../img/icon-menu.svg") no-repeat 0 0;
+
+
+  }
+  outline: 1px solid red;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+

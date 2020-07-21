@@ -1,0 +1,20 @@
+@mixin basic-text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@mixin basic-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin blue-design {
+  background-color: $light-blue;
+  color: $white;
+}
+
+
+

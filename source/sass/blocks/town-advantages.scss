@@ -1,0 +1,34 @@
+.town-advantages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  background-color: $white;
+  color: $black;
+}
+
+.town-advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 40px 0 70px;
+}
+
+.town-advantages__title {
+  @include basic-title;
+}
+
+.town-advantages__description {
+  @include basic-text;
+}
+
+.town-advantages__item--housing::before {
+  position: absolute;
+
+  content: "";
+  width: 39px;
+  height: 37px;
+
+  background: red url("../../img/icon-house.svg") no-repeat 0 0;
+}

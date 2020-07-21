@@ -1,0 +1,16 @@
+.template-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 34px 0 31px;
+ }
+
+ .template-section__title {
+  @include basic-title;
+ }
+
+ .template-section__text {
+  @include basic-text;
+ }
+
+

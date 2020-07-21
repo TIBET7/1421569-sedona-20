@@ -1,1 +1,82 @@
-// Начните писать стили здесь
+@import "variables";
+@import "mixins";
+
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2");
+  src: url("../fonts/ptsans.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2");
+  src: url("../fonts/ptsansbold.woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+
+}
+
+/* Default styles */
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 320px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  position: absolute;
+}
+
+/* Blocks */
+@import "blocks/page";
+@import "blocks/site-list";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/template-section";
+@import "blocks/advantages";
+@import "blocks/town-advantages";
+
+
+
+
+
+
+
+
