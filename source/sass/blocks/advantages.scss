@@ -1,7 +1,5 @@
 .advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .advantages__item {
@@ -9,7 +7,6 @@
   flex-direction: column;
   text-align: center;
   width: 100%;
-
 
   background-color: $gray;
 
@@ -28,6 +25,22 @@
 
 .advantages__item-description {
   @include basic-text;
+}
+
+.advantages__item--underlined {
+  position: relative;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 1;
+
+    content: "";
+    width: 280px;
+    height: 1px;
+
+    background-color: #D6D6D6;
+  }
 }
 
 

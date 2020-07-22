@@ -1,7 +1,5 @@
 .town-advantages {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 
   background-color: $white;
   color: $black;
@@ -25,10 +23,36 @@
 
 .town-advantages__item--housing::before {
   position: absolute;
+  left: 21px;
+  top: 26px;
 
   content: "";
   width: 39px;
   height: 37px;
 
-  background: red url("../../img/icon-house.svg") no-repeat 0 0;
+  background-color: $gray;
+}
+
+.town-advantages__item--souvenirs::before {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+
+  content: "";
+  width: 39px;
+  height: 37px;
+
+   background-color: $gray;
+}
+
+.town-advantages__item--food::before {
+  position: absolute;
+  left: 18px;
+  top: 21px;
+
+  content: "";
+  width: 39px;
+  height: 37px;
+
+  background-color: $gray;
 }

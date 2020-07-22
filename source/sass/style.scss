@@ -24,10 +24,12 @@
 
 /* Default styles */
 body {
-  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   padding: 0;
   max-width: 320px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
 }
 
 img {
@@ -66,12 +68,25 @@ input[type="radio"].visually-hidden {
 
 /* Blocks */
 @import "blocks/page";
+@import "blocks/page-main";
 @import "blocks/site-list";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/template-section";
 @import "blocks/advantages";
 @import "blocks/town-advantages";
+@import "blocks/find-hotel";
+@import "blocks/button";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/photo-main";
+@import "blocks/video";
+@import "blocks/photos";
+@import "blocks/likes";
+@import "blocks/review-main";
+@import "blocks/review";
+@import "blocks/modal";
 
 
 

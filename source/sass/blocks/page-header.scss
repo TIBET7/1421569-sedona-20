@@ -5,6 +5,7 @@
     position: absolute;
     top: 17px;
     right: 20px;
+    z-index: 1;
 
     content: "";
     width: 22px;
@@ -20,6 +21,7 @@
 .page-header__logo {
   position: absolute;
   left: 50%;
+  z-index: 1;
   transform: translateX(-50%);
 }
 

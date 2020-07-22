@@ -1,10 +1,8 @@
-.page-main__img {
+.photo-main__img {
   position: relative;
   width: 320px;
-  min-height: 389px;
-  background: url("../../img/jpg/back-mobile.jpg") no-repeat 0 0;
-
-  border: 1px solid $white;
+  min-height: 214px;
+  background: url("../../img/jpg/bg.jpg") no-repeat 0 0;
 
   &::before,
   &::after {
@@ -13,15 +11,15 @@
     z-index: 1;
 
     content: "";
-    width: 160px;
-    height: 27px;
+    width: 161px;
+    height: 26px;
 
     background: url("../../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
   }
 
   &::after {
     left: 50%;
-    bottom: -1px;
+    bottom: 0px;
 
     background:  url("../../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
     background-size: cover;
@@ -30,23 +28,16 @@
   }
 }
 
-.page-main__img-text {
+.photo-main__img-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+    top: 50%;
+    left: 50%;
 
-  content: "";
-  width: 282px;
-  height: 214px;
-  background: url("../../img/svg/text-index.svg") no-repeat 0 0 ;
-  background-size: cover;
+    content: "";
+    width: 229px;
+    height: 39px;
+    background: url("../../img/svg/sedona.svg") no-repeat 0 0 ;
+    background-size: cover;
 
-  transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
 }
-
-
-
-
-
-
-
