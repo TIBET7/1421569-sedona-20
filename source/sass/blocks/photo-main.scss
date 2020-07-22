@@ -19,9 +19,9 @@
 
   &::after {
     left: 50%;
-    bottom: 0px;
+    bottom: 0;
 
-    background:  url("../../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+    background: url("../../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
     background-size: cover;
 
     transform: scaleX(-1);
@@ -30,14 +30,14 @@
 
 .photo-main__img-text {
   position: absolute;
-    top: 50%;
-    left: 50%;
+  top: 50%;
+  left: 50%;
 
-    content: "";
-    width: 229px;
-    height: 39px;
-    background: url("../../img/svg/sedona.svg") no-repeat 0 0 ;
-    background-size: cover;
+  content: "";
+  width: 229px;
+  height: 39px;
+  background: url("../../img/svg/sedona.svg") no-repeat 0 0;
+  background-size: cover;
 
-    transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }

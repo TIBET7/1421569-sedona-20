@@ -9,8 +9,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-
 }
+
 /* pt-sans-700 - latin_cyrillic */
 @font-face {
   font-family: "PT Sans";
@@ -19,7 +19,6 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-
 }
 
 /* Default styles */
@@ -28,7 +27,7 @@ body {
   padding: 0;
   max-width: 320px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
 }
 
@@ -58,8 +57,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 
@@ -87,11 +85,3 @@ input[type="radio"].visually-hidden {
 @import "blocks/review-main";
 @import "blocks/review";
 @import "blocks/modal";
-
-
-
-
-
-
-
-

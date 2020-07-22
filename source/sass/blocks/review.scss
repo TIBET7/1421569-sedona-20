@@ -55,7 +55,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-
 }
 
 .review__input {
@@ -69,17 +68,13 @@
 
   &::placeholder {
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
 
     color: $black;
   }
-}
-
-.review__textarea {
-  background-color: $light-gray;
 }
 
 .review__label--contacts {
@@ -94,7 +89,7 @@
   margin-bottom: 20px;
 }
 
-.review__user-phone:before {
+.review__user-phone::before {
   position: absolute;
   top: 91px;
   right: 0;
@@ -104,10 +99,10 @@
   width: 58px;
   height: 58px;
 
-  background: #E6E6E6 url("../../img/svg/icon-phone.svg") no-repeat center center;
+  background: #e6e6e6 url("../../img/svg/icon-phone.svg") no-repeat center center;
 }
 
-.review__user-email:before {
+.review__user-email::before {
   position: absolute;
   top: 205px;
   left: 220px;
@@ -117,7 +112,7 @@
   width: 58px;
   height: 58px;
 
-  background: #E6E6E6 url("../../img/svg/icon-mail.svg") no-repeat center center;
+  background: #e6e6e6 url("../../img/svg/icon-mail.svg") no-repeat center center;
 }
 
 .review__list {
@@ -164,11 +159,12 @@
   min-height: 160px;
   padding: 20px;
 
+  background-color: $light-gray;
   border: none;
 }
 
 .review__textarea::placeholder {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -176,4 +172,3 @@
 
   color: $black;
 }
-

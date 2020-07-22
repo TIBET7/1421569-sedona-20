@@ -3,18 +3,19 @@
   flex-direction: column;
   text-align: center;
   padding: 34px 34px 15px 31px;
- }
+}
 
- .template-section__title {
+.template-section__title {
   @include basic-title;
- }
+}
 
- .template-section__text {
-   margin: 0;
+.template-section__text {
+  margin: 0;
+
   @include basic-text;
- }
+}
 
- .template-section--review {
+.template-section--review {
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -34,11 +35,6 @@
   }
 }
 
-.template-section--photos{
+.template-section--photos {
   margin-bottom: 20px;
 }
-
-
-
-
-

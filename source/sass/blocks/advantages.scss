@@ -29,6 +29,7 @@
 
 .advantages__item--underlined {
   position: relative;
+
   &::after {
     position: absolute;
     bottom: 0;
@@ -39,11 +40,6 @@
     width: 280px;
     height: 1px;
 
-    background-color: #D6D6D6;
+    background-color: #d6d6d6;
   }
 }
-
-
-
-
-
