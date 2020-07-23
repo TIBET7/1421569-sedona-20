@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+@import "variables";
+@import "mixins";
+@import "general";
+
+/* Blocks */
+@import "blocks/page";
+@import "blocks/page-main";
+@import "blocks/site-list";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/template-section";
+@import "blocks/advantages";
+@import "blocks/town-advantages";
+@import "blocks/find-hotel";
+@import "blocks/button";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/photo-main";
+@import "blocks/video";
+@import "blocks/photos";
+@import "blocks/likes";
+@import "blocks/review-main";
+@import "blocks/review";
+@import "blocks/modal";

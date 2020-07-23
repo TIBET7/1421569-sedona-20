@@ -1,0 +1,58 @@
+.town-advantages {
+  @include list-reset;
+
+  background-color: $white;
+  color: $black;
+}
+
+.town-advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 40px 0 70px;
+}
+
+.town-advantages__title {
+  @include basic-title;
+}
+
+.town-advantages__description {
+  @include basic-text;
+}
+
+.town-advantages__item--housing::before {
+  position: absolute;
+  left: 21px;
+  top: 26px;
+
+  content: "";
+  width: 39px;
+  height: 37px;
+
+  background-color: $gray;
+}
+
+.town-advantages__item--souvenirs::before {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+
+  content: "";
+  width: 39px;
+  height: 37px;
+
+  background-color: $gray;
+}
+
+.town-advantages__item--food::before {
+  position: absolute;
+  left: 18px;
+  top: 21px;
+
+  content: "";
+  width: 39px;
+  height: 37px;
+
+  background-color: $gray;
+}

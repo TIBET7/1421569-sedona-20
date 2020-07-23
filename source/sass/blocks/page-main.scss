@@ -1,0 +1,45 @@
+.page-main__img {
+  position: relative;
+  width: 320px;
+  min-height: 389px;
+  background: url("../img/jpg/back-mobile.jpg") no-repeat 0 0;
+
+  border: 1px solid $white;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    z-index: 1;
+
+    content: "";
+    width: 160px;
+    height: 27px;
+
+    background: url("../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+  }
+
+  &::after {
+    left: 50%;
+    bottom: -1px;
+
+    background: url("../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+    background-size: cover;
+
+    transform: scaleX(-1);
+  }
+}
+
+.page-main__img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  content: "";
+  width: 282px;
+  height: 214px;
+  background: url("../img/svg/text-index.svg") no-repeat 0 0;
+  background-size: cover;
+
+  transform: translate3d(-50%, -50%, 0);
+}

@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+
+  padding: 15px 32px 17px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include blue-design;
+  border: none;
+}
+
+.button--form {
+  width: 100%;
+  margin-bottom: 50px;
+}

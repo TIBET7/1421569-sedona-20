@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.copyright__link {
+  display: block;
+  margin-left: 10px;
+}

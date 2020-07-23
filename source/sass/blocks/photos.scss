@@ -1,0 +1,19 @@
+.photos__list {
+  @include list-reset;
+}
+
+.photos__item-title {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.photos__item-text {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $dark-gray;
+}
