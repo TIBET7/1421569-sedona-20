@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   min-height: 214px;
-  background: url("../../img/jpg/bg.jpg") no-repeat 0 0;
+  background: url("../img/jpg/bg.jpg") no-repeat 0 0;
 
   &::before,
   &::after {
@@ -14,14 +14,14 @@
     width: 161px;
     height: 26px;
 
-    background: url("../../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+    background: url("../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
   }
 
   &::after {
     left: 50%;
     bottom: 0;
 
-    background: url("../../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+    background: url("../img/svg/bg-intro-triangle-mobile.svg") no-repeat 0 0;
     background-size: cover;
 
     transform: scaleX(-1);
@@ -36,7 +36,7 @@
   content: "";
   width: 229px;
   height: 39px;
-  background: url("../../img/svg/sedona.svg") no-repeat 0 0;
+  background: url("../img/svg/sedona.svg") no-repeat 0 0;
   background-size: cover;
 
   transform: translate3d(-50%, -50%, 0);
