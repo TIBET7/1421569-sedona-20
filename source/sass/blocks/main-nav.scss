@@ -7,4 +7,8 @@
   background: none;
   border:none;
   fill: $light-blue;
+
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
 }
