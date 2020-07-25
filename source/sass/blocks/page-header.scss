@@ -1,8 +1,14 @@
 .page-header {
   min-height: 56px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
+}
+
+@media(min-width: $tablet-width) {
+  .page-header__logo {
+    display: none;
+  }
 }
 
 .page-header__logo-img {
