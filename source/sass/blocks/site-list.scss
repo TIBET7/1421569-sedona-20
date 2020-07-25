@@ -9,6 +9,15 @@
   margin-top: 56px;
   padding: 0;
   list-style: none;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    min-width: 768px;
+  }
 }
 
 .site-list__item {
@@ -17,11 +26,20 @@
 
   font-size: 18px;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 
   @include blue-design;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media(min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
+
+    background: none;
+    box-shadow: none;
+    color: $black;
+  }
 }
 
 .site-list__item a {
