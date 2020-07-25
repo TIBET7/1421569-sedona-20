@@ -1,19 +1,21 @@
 .page-header {
   min-height: 56px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
 }
 
 @media(min-width: $tablet-width) {
   .page-header__logo {
-    display: none;
+    display: block;
   }
 }
 
 .page-header__logo-img {
   position: absolute;
   left: 50%;
+  top: 0;
   z-index: 1;
   transform: translateX(-50%);
 }
