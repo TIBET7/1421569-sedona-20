@@ -49,9 +49,6 @@
 .template-section__title--slogan {
   @media(min-width: $tablet-width) {
     max-width: 520px;
-  }
-
-  @media(min-width: $desktop-width) {
-   margin: 0 auto 40px;
+    margin: 0 auto 40px;
   }
 }
