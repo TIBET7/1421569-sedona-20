@@ -5,6 +5,7 @@
 }
 
 .advantages__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -15,12 +16,28 @@
   &--blue {
     @include blue-design;
   }
+  &--blue:first-child::before {
+    position: absolute;
+    top: -57px;
+
+
+    content: "";
+    width: 320px;
+    height: 57px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='320' height='57' viewBox='0 0 320 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-191.171 23.7L-441 0V57H-191.171H159.55L-191.171 0V23.7Z' fill='%2381B3D2'/%3E%3Cpath d='M510.271 23.7V0L159.55 57H510.271H760V0L510.271 23.7Z' fill='%2381B3D2'/%3E%3C/svg%3E");
+
+  }
 }
 
 .advantages__item-title {
   margin: 0;
-  margin-top: 40px;
+  padding-top: 40px;
   @include basic-title;
+
+  &--first {
+    padding-top: 40px;
+  }
 }
 
 .advantages__item-number {
