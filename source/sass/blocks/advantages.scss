@@ -19,14 +19,19 @@
 
 .advantages__item-title {
   margin: 0;
+  margin-top: 40px;
   @include basic-title;
 }
 
 .advantages__item-number {
+  margin: 0;
+  margin: 20px 0;
   @include basic-text;
 }
 
 .advantages__item-description {
+  margin: 0;
+  margin-bottom: 35px;
   @include basic-text;
 }
 
