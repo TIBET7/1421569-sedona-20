@@ -19,6 +19,10 @@
     height: 1px;
 
     background-color: $special-gray;
+
+    @media(min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 }
 
@@ -40,6 +44,10 @@
   text-align: center;
 
   color: $black;
+
+  @media(min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review__label {
@@ -55,6 +63,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.review__input-wraper--introducing {
+  @media(min-width: $tablet-width) {
+    margin-bottom: 25px;
+    margin-left: 58px;
+  }
 }
 
 .review__input {
@@ -124,7 +139,7 @@
 .review__label--radio,
 .review__label--checkbox {
   padding-left: 75px;
-  padding-bottom: 30px;
+  margin-bottom: 47px;
 
   font-size: 18px;
   line-height: 26px;
@@ -132,6 +147,10 @@
   text-transform: none;
 
   color: $black;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .review__input-radio,
@@ -172,3 +191,72 @@
 
   color: $black;
 }
+
+/* Impressions */
+@media(min-width: $tablet-width) {
+  .review--impressions {
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    &::after {
+      position: absolute;
+      width: 1px;
+      height: 292px;
+      top: 0;
+      left: 100%;
+
+      content: "";
+      background-color: $line-design;
+    }
+ }
+  .review__title--impressions {
+    margin-bottom: 40px;
+
+    text-align: left;
+  }
+}
+
+/* Introduce yourself */
+@media(min-width: $tablet-width) {
+  .review--introducing {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+ }
+ .review__title--introducing {
+    margin-bottom: 25px;
+    margin-left: 58px;
+    text-align: left;
+ }
+}
+
+/* Contacts */
+@media(min-width: $tablet-width) {
+  .review--contacts {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+ }
+}
+
+/* Sights */
+@media(min-width: $tablet-width) {
+  .review--sights {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+ }
+}
+
+/* Emotions */
+@media(min-width: $tablet-width) {
+  .review--textarea {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+ }
+}
+
+
+
+
+
+
+

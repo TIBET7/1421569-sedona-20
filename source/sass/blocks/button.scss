@@ -18,4 +18,9 @@
 .button--form {
   width: 100%;
   margin-bottom: 50px;
+
+  @media(min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 5/ 6;
+   }
 }
