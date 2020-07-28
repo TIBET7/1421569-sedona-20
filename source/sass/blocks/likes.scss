@@ -1,8 +1,26 @@
 .likes__count {
+  position: relative;
+  display: block;
+  margin-bottom: 38px;
+  padding-left: 37px;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
 
   color: $black;
+
+  &::before {
+    position: absolute;
+    width: 23px;
+    height: 21px;
+
+    content: "";
+    left: 0;
+
+    background-color: green;
+    background: url("../../img/svg/icon-like.svg") no-repeat 0 0;
+    opacity: 0.3;
+  }
 }
