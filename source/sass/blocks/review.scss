@@ -20,7 +20,7 @@
 
     background-color: $special-gray;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       background-color: transparent;
     }
   }
@@ -35,7 +35,7 @@
 }
 
 .review__title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -45,7 +45,7 @@
 
   color: $black;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
   }
 }
@@ -66,9 +66,13 @@
 }
 
 .review__input-wraper--introducing {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 25px;
     margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 78px;
   }
 }
 
@@ -94,6 +98,11 @@
 
 .review__label--contacts {
   padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-right: 10px;
+  }
 }
 
 .review__input--user-phone,
@@ -102,33 +111,47 @@
   margin-left: 0;
   margin-top: 10px;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: 275px;
+  }
 }
 
-.review__user-phone::before {
+.review__user-phone,
+.review__user-email {
+  position: relative;
+}
+
+
+.review__user-phone::before,
+.review__user-email::before {
   position: absolute;
-  top: 91px;
+  top: 36px;
   right: 0;
   z-index: 1;
 
   content: "";
   width: 58px;
-  height: 58px;
+  height: 57px;
 
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 29px);
+  }
+}
+
+.review__user-phone::before {
   background: #e6e6e6 url("../img/svg/icon-phone.svg") no-repeat center center;
+
+  @media (min-width: $desktop-width) {
+    right: 127px;
+  }
 }
 
 .review__user-email::before {
-  position: absolute;
-  top: 205px;
-  left: 220px;
-  z-index: 1;
-
-  content: "";
-  width: 58px;
-  height: 58px;
-
   background: #e6e6e6 url("../img/svg/icon-mail.svg") no-repeat center center;
 }
+
 
 .review__list {
   @include list-reset;
@@ -148,7 +171,7 @@
 
   color: $black;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 56px;
   }
 }
@@ -158,7 +181,6 @@
   position: absolute;
   margin-left: -75px;
   margin-top: -10px;
-
 
   width: 46px;
   height: 46px;
@@ -180,6 +202,10 @@
 
   background-color: $light-gray;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .review__textarea::placeholder {
@@ -193,7 +219,7 @@
 }
 
 /* Impressions */
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .review--impressions {
     position: relative;
     grid-column: 1 / 2;
@@ -209,7 +235,8 @@
       content: "";
       background-color: $line-design;
     }
- }
+  }
+
   .review__title--impressions {
     margin-bottom: 40px;
 
@@ -217,46 +244,163 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .review__title--impressions {
+    margin-left: 75px;
+  }
+}
+
 /* Introduce yourself */
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .review--introducing {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
- }
- .review__title--introducing {
+  }
+
+  .review__title--introducing {
     margin-bottom: 25px;
     margin-left: 58px;
     text-align: left;
- }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--introducing {
+    margin-left: 78px;
+  }
 }
 
 /* Contacts */
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .review--contacts {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
- }
+
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  .review__user-phone,
+  .review__user-email {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+  }
+
+  .review__contact {
+    display: none;
+  }
+
+  .review--contacts {
+    margin-bottom: 50px;
+  }
+
+  .review__title--contacts {
+    margin-bottom: 40px;
+  }
 }
 
 /* Sights */
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .review--sights {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
- }
+  }
+
+  .review__list--sights {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin-left: 100px;
+    margin-right: 80px;
+  }
+
+  .review__list-inner--sights {
+    width: 45%;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-left: 45px;
+    }
+  }
+
+  .review__title--sights {
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-bottom: 48px;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .review__list--sights {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .review__title--sights {
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+
+  .review__list-inner--sights {
+    width: 20%;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-left: 0;
+    }
+  }
+
+  .review__label--checkbox {
+    padding-left: 70px;
+  }
+}
+
+
 /* Emotions */
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .review--textarea {
     grid-column: 1 / 3;
     grid-row: 4 / 5;
- }
+  }
 }
 
+/* Legend */
+.review__legend {
+  display: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
 
+    color: $dark-gray;
+  }
+}
 
+/* Send */
+@media (min-width: $tablet-width) {
+  .review__sending {
+    grid-column: 1 / 3;
+    grid-row: 5/ 6;
 
+    display: flex;
+  }
 
+  .review__sending-item {
+    width: 50%;
+  }
 
+  .review__legend {
+    text-align: right;
+  }
+}

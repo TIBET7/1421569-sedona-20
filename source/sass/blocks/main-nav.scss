@@ -1,10 +1,10 @@
 .main-nav__toogle {
   margin-right: 20px;
   background: none;
-  border:none;
+  border: none;
   fill: $light-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

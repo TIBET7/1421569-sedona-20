@@ -8,15 +8,16 @@
 .template-section__title {
   margin: 0;
   margin-bottom: 40px;
+
   @include basic-title;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
   }
 }
 
 .template-section__title--review {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 }
@@ -39,16 +40,12 @@
   margin-bottom: 30px;
   padding-bottom: 25px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 34px 102px 25px;
-
-    outline: 2px solid red;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 114px 262px 60px;
-
-    outline: 2px solid red;
   }
 
   &::after {
@@ -63,7 +60,7 @@
 
     background-color: $special-gray;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -74,7 +71,7 @@
 }
 
 .template-section__title--slogan {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 520px;
     margin: 0 auto 40px;
   }

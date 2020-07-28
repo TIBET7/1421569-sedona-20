@@ -4,7 +4,7 @@
   padding: 38px 20px 48px;
   text-align: center;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 57px 20px 66px;
   }
 }
@@ -19,7 +19,7 @@
 
   color: $black;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 }
@@ -33,21 +33,21 @@
 
   color: $dark-gray;
 
-  @media(min-width: $tablet-width) {
-   padding: 0 166px;
+  @media (min-width: $tablet-width) {
+    padding: 0 166px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 382px;
   }
 }
 
 .find-hotel__link {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0 155px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 370px;
   }
 }

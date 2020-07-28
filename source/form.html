@@ -83,19 +83,20 @@
 
               <!-- Contacts -->
               <fieldset class="review review--contacts">
-                <legend class="review__title">
+                <legend class="review__title review__title--contacts">
                   Контактная информация:
                 </legend>
+                <div class="review__wrapper">
+                  <div class="review__user-phone">
+                    <label class="review__label review__label--contacts" for="user-phone"><span class="review__contact">Контактный</span> телефон*:</label>
+                    <input class="review__input review__input--user-phone" id="user-phone" type="tel" name="user-phone" placeholder="Введите телефон" required>
+                  </div>
 
-                <div class="review__user-phone">
-                  <label class="review__label review__label--contacts" for="user-phone">Контактный телефон*:</label>
-                  <input class="review__input review__input--user-phone" id="user-phone" type="tel" name="user-phone" placeholder="Введите телефон" required>
-                </div>
-
-                <div class="review__user-email">
-                  <label class="review__label review__label--contacts" for="user-email">Электронная почта*:</label>
-                  <input class="review__input review__input--user-email" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
-                </div>
+                  <div class="review__user-email">
+                    <label class="review__label review__label--contacts" for="user-email">Электронная почта*:</label>
+                    <input class="review__input review__input--user-email" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
+                  </div>
+                  </div>
               </fieldset>
 
               <!-- Impressions -->
@@ -130,33 +131,33 @@
 
               <!-- Sights-->
               <fieldset class="review review--sights">
-                <legend class="review__title">
+                <legend class="review__title review__title--sights">
                   Посещенные достопримечательности:
                 </legend>
 
-                <ul class="review__list">
-                  <li>
+                <ul class="review__list review__list--sights">
+                  <li class="review__list-inner review__list-inner--sights">
                     <label class="review__label review__label--checkbox">
                       <input class="review__input visually-hidden" type="checkbox" name="devils-bridge" checked>
                       <span class="review__input-checkbox"></span>
                       Мост Дьявола
                     </label>
                   </li>
-                  <li>
+                  <li class="review__list-inner review__list-inner--sights">
                     <label class="review__label review__label--checkbox">
                       <input class="review__input visually-hidden" type="checkbox" name="bell-mountain" checked>
                       <span class="review__input-checkbox"></span>
                       Гора-Колокол
                     </label>
                   </li>
-                  <li>
+                  <li class="review__list-inner review__list-inner--sights">
                     <label class="review__label review__label--checkbox">
                       <input class="review__input visually-hidden" type="checkbox" name="slide-park" checked>
                       <span class="review__input-checkbox"></span>
                       Слайд-парк
                     </label>
                   </li>
-                  <li>
+                  <li class="review__list-inner review__list-inner--sights">
                     <label class="review__label review__label--checkbox">
                       <input class="review__input visually-hidden" type="checkbox" name="red-mountains">
                       <span class="review__input-checkbox"></span>
@@ -177,7 +178,14 @@
               </fieldset>
 
               <!-- Send-->
-              <button class="button button--form" type="submit">Отправить отзыв</button>
+              <div class="review__sending">
+                <div class="review__sending-item">
+                  <button class="button button--form" type="submit">Отправить отзыв</button>
+                </div>
+                <div class="review__sending-item">
+                  <p class="review__legend">* &#8212; обязательные поля</p>
+                </div>
+              </div>
             </div><!-- ./form__wrapper-->
           </form>
         </div><!-- ./review-main__wrapper-->
