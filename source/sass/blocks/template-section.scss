@@ -16,7 +16,8 @@
   }
 }
 
-.template-section__title--review {
+.template-section__title--review,
+.template-section__title--photo{
   @media (min-width: $tablet-width) {
     font-size: 30px;
   }
@@ -73,12 +74,28 @@
     padding: 64px 105px 25px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 64px 380px 25px;
+  }
 }
 
-
 .template-section--photos {
-  padding: 28px 0 5px;
+  padding: 28px 3px 5px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 95px 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 370px 5px;
+  }
+}
+
+.template-section__title--photos {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .template-section__title--slogan {

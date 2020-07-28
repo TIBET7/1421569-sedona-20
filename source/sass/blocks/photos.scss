@@ -81,4 +81,27 @@
   &:first-child {
     grid-column: 1 / 4;
   }
+
+  .photos__item-inner {
+    position: relative;
+  }
+
+  .photos__item-inner-text {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -20px;
+
+    width: 100%;
+    padding: 0 20px;
+
+
+   background-color: rgba(0,0, 0, 0.3)
+  }
+  .photos__item-title,
+  .photos__item-text {
+    color: $white;
+  }
+
+
 }
