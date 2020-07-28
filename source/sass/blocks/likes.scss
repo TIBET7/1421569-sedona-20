@@ -24,3 +24,9 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .likes__count {
+    margin-bottom: 0;
+  }
+}
