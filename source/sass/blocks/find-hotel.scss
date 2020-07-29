@@ -34,11 +34,19 @@
   color: $dark-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 0 166px;
+    padding: 0 140px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 382px;
+    padding: 0 350px;
+  }
+}
+
+.find-hotel__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
   }
 }
 
