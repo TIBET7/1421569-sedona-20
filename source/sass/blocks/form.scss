@@ -1,0 +1,12 @@
+
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+  }
+}

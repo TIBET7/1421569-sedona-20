@@ -6,13 +6,32 @@
 }
 
 .template-section__title {
+  margin: 0;
+  margin-bottom: 40px;
+
   @include basic-title;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.template-section__title--review,
+.template-section__title--photo {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .template-section__text {
   margin: 0;
+  margin-bottom: 45px;
 
   @include basic-text;
+}
+
+.template-section__text--review {
+  margin-bottom: 0;
 }
 
 .template-section--review {
@@ -20,6 +39,15 @@
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 30px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 34px 102px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 114px 262px 60px;
+  }
 
   &::after {
     position: absolute;
@@ -32,9 +60,47 @@
     height: 1px;
 
     background-color: $special-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.template-section--photo {
+  padding: 28px 0 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 105px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 64px 380px 25px;
   }
 }
 
 .template-section--photos {
+  padding: 28px 3px 5px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 95px 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 370px 5px;
+  }
+}
+
+.template-section__title--photos {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.template-section__title--slogan {
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+    margin: 0 auto 40px;
+  }
 }

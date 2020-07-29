@@ -2,20 +2,39 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-}
 
-.social__title {
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  font-weight: 900;
+  margin-bottom: 40px;
 
-  color: $black;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social__list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  justify-content: center;
+
+  @include list-reset;
+}
+
+.social__item {
+  margin-right: 6px;
+}
+
+.social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+}
+
+.social__link--twitter {
+  background: $light-blue url("../img/svg/icon-twitter.svg") no-repeat center center;
+}
+
+.social__link--facebook {
+  background: $light-blue url("../img/svg/icon-facebook.svg") no-repeat center center;
+}
+
+.social__link--youtube {
+  background: $light-blue url("../img/svg/icon-youtube.svg") no-repeat center center;
 }
