@@ -66,6 +66,14 @@
   @include basic-text;
 }
 
+.town-advantages__description--food br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
 
 .town-advantages__item--housing::before {
   position: absolute;
