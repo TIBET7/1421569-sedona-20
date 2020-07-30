@@ -35,7 +35,7 @@
 }
 
 .review--textarea {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .review--textarea::after {
@@ -59,6 +59,10 @@
 
   &--sights {
     margin-bottom: 36px;
+  }
+
+  &--textarea {
+    margin-bottom: 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -224,7 +228,7 @@
 .review__textarea {
   width: 279px;
   min-height: 160px;
-  padding: 20px;
+  padding: 14px 20px 20px;
 
   background-color: $light-gray;
   border: none;
@@ -342,6 +346,10 @@
 }
 
 /* Sights */
+.review--sights {
+  margin-bottom: 6px;
+}
+
 @media (min-width: $tablet-width) {
   .review--sights {
     grid-column: 1 / 3;

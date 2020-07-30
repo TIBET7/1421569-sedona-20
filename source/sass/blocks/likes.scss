@@ -11,6 +11,10 @@
 
   color: $black;
 
+  &--local-vegetation {
+    margin-bottom: 40px;
+  }
+
   &::before {
     position: absolute;
     width: 23px;

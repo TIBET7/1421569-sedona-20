@@ -5,6 +5,10 @@
 
   margin: 38px 0 23px;
 
+  &--form {
+    margin-top: 42px;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;
