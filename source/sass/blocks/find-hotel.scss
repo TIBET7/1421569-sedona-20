@@ -1,7 +1,7 @@
 .find-hotel {
   display: flex;
   flex-direction: column;
-  padding: 38px 20px 48px;
+  padding: 32px 20px 48px;
   text-align: center;
 
   @media (min-width: $desktop-width) {
@@ -11,7 +11,7 @@
 
 .find-hotel__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -26,7 +26,7 @@
 
 .find-hotel__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;

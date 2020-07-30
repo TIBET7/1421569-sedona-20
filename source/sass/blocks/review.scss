@@ -8,6 +8,14 @@
   margin: 0;
   margin-bottom: 20px;
 
+  &--contacts {
+    margin-bottom: 36px;
+  }
+
+  &--impressions {
+    margin-bottom: 14px;
+  }
+
   &::after {
     position: absolute;
     bottom: 0;
@@ -35,7 +43,7 @@
 }
 
 .review__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -44,6 +52,14 @@
   text-align: center;
 
   color: $black;
+
+  &--impressions {
+    margin-bottom: 37px;
+  }
+
+  &--sights {
+    margin-bottom: 36px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -78,7 +94,7 @@
 
 .review__input {
   flex-grow: 1;
-  padding: 24px 0 18px 22px;
+  padding: 25px 0 18px 22px;
 
   margin-left: 10px;
 
@@ -86,6 +102,8 @@
   border: none;
 
   &::placeholder {
+
+   padding-left: 5px;
 
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
@@ -109,8 +127,12 @@
 .review__input--user-email {
   width: 100%;
   margin-left: 0;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+
+  &::placeholder {
+    padding-left: 1px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -161,8 +183,8 @@
 
 .review__label--radio,
 .review__label--checkbox {
-  padding-left: 75px;
-  margin-bottom: 47px;
+  padding-left: 79px;
+  margin-bottom: 43px;
 
   font-size: 18px;
   line-height: 26px;
@@ -174,6 +196,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
   }
+}
+
+.review__label--checkbox {
+  margin-bottom: 54px;
 }
 
 .review__input-radio,
@@ -251,6 +277,10 @@
 }
 
 /* Introduce yourself */
+.review--introducing {
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .review--introducing {
     grid-column: 2 / 3;
@@ -271,6 +301,10 @@
 }
 
 /* Contacts */
+.review__title--contacts {
+  margin-bottom: 17px;
+}
+
 @media (min-width: $tablet-width) {
   .review--contacts {
     grid-column: 1 / 3;

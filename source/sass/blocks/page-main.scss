@@ -56,4 +56,9 @@
     width: 461px;
     height: 350px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 8px);
+
+  }
 }

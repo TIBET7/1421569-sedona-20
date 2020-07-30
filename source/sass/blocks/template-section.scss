@@ -5,11 +5,22 @@
   padding: 34px 34px 15px 31px;
 }
 
+.template-section--index {
+  padding: 31px 35px 15px 30px;
+}
+
 .template-section__title {
   margin: 0;
   margin-bottom: 40px;
 
   @include basic-title;
+
+  &--review {
+    margin-bottom: 37px;
+    margin-left: 5px;
+    line-height: 24px
+  }
+
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -25,7 +36,7 @@
 
 .template-section__text {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   @include basic-text;
 }
@@ -36,10 +47,8 @@
 
 .template-section--review {
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
+  margin-bottom: 18px;
+  padding: 36px 0 25px;
 
   @media (min-width: $tablet-width) {
     padding: 34px 102px 25px;
@@ -99,6 +108,8 @@
 }
 
 .template-section__title--slogan {
+  margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     max-width: 520px;
     margin: 0 auto 40px;
