@@ -7,6 +7,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+   margin-left: 270px;
   }
 }
 

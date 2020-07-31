@@ -40,7 +40,7 @@
     padding: 0 58px;
 
     &:nth-child(2) {
-      padding: 0 100px;
+      padding: 0 87px;
     }
 
     &:nth-child(3) {
@@ -57,12 +57,17 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-top: 158px;
+    margin-bottom: 20px;
   }
 }
 
 .town-advantages__title--souvenirs,
 .town-advantages__title--food {
   margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 158px;
+  }
 }
 
 .town-advantages__description {
@@ -76,6 +81,14 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.town-advantages__description--souvenirs br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     display: inline-block;
   }
 }

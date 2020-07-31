@@ -45,6 +45,12 @@
 
   &--blue {
     @include blue-design;
+
+    &:nth-child(2) {
+      @media (min-width: $desktop-width) {
+        margin-top: 23px;
+      }
+    }
   }
 
   &--blue:first-child::before {
@@ -80,14 +86,23 @@
   @media (min-width: $tablet-width) {
     padding: 40px 40px 0;
     font-size: 21px;
+
+    &--bridge {
+      padding: 43px 53px 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 47px 108px 0;
+
+    &--bridge {
+      padding: 51px 125px 0;
+    }
   }
 }
 
 .advantages__item-number {
+  margin: 0;
   margin: 12px 0;
 
   @include basic-text;
@@ -96,7 +111,13 @@
   &--road,
   &--tourists {
     margin-top: 11px;
-    margin-bottom: 17px;
+    margin-bottom: 25px;
+  }
+
+  &--bridge {
+    @media (min-width: $tablet-width) {
+      margin: 14px 0;
+    }
   }
 }
 
@@ -109,10 +130,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 20px;
-
-    &--bridge {
-      padding: 0 30px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -124,7 +141,13 @@
   padding: 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 20px;
+    padding: 13px 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 55px;
+    margin-bottom: 0;
   }
 }
 
@@ -132,8 +155,12 @@
   padding: 4px 32px 0 30px;
   margin-bottom: 35px;
 
+  @media (min-width: $tablet-width) {
+    padding: 9px 30px 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 90px;
+    padding: 9px 90px;
   }
 }
 
@@ -170,6 +197,7 @@
   @media (min-width: $tablet-width) {
     width: 256px;
     justify-content: center;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -195,7 +223,7 @@
   }
 
   .advantages__item-title--no-image {
-    padding: 52px 49px 0;
+    padding: 39px 49px 0;
   }
 
   .advantages__item-description--no-image {
@@ -205,12 +233,20 @@
 
   .advantages__item-description--area {
     padding: 0 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px 20px 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 40px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item-title--no-image {
-    padding: 42px 125px 0;
+    padding: 19px 125px 0;
   }
 
   .advantages__item-description--no-image {
