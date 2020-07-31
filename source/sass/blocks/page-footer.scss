@@ -9,6 +9,12 @@
     margin-top: 42px;
   }
 
+  &--photo {
+    margin-top: 140px;
+  }
+
+
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;

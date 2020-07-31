@@ -18,7 +18,7 @@
   &--review {
     margin-bottom: 37px;
     margin-left: 5px;
-    line-height: 24px
+    line-height: 24px;
   }
 
   &--photo {
@@ -27,6 +27,10 @@
 
   &--photos {
     margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
   }
 
 
@@ -55,11 +59,12 @@
 
   &--photos {
     line-height: 24px;
+    margin-bottom: 0;
   }
-}
 
-.template-section__text--review {
-  margin-bottom: 0;
+  &--review {
+    margin-bottom: 0;
+  }
 }
 
 .template-section--review {
@@ -94,7 +99,7 @@
 }
 
 .template-section--photo {
-  padding: 33px 0 0px;
+  padding: 33px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 64px 105px 25px;
@@ -106,7 +111,7 @@
 }
 
 .template-section--photos {
-  padding: 12px 3px 5px;
+  padding: 12px 3px 12px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -115,12 +120,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 58px 370px 5px;
-  }
-}
-
-.template-section__title--photos {
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
   }
 }
 
