@@ -46,7 +46,7 @@
       <main class="review-main">
         <h1 class="visually-hidden">Отзыв об отелях Седоны</h1>
         <div class="review-main__img">
-          <div class="review-main__img-text"></div>
+          <div class="review-main__img-text review-main__img-text--form"></div>
         </div>
 
         <div class="review-main__wrapper">
@@ -59,6 +59,7 @@
           <!-- Form -->
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__wrapper">
+
               <!-- Introduce yourself -->
               <fieldset class="review review--introducing">
                 <legend class="review__title review__title--introducing">
@@ -66,18 +67,18 @@
                 </legend>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
-                  <label class="review__label" for="username">Имя*:</label>
-                  <input class="review__input" id="username" type="text" name="username" placeholder="Петр" required>
+                  <label class="review__label review__label--introducing" for="username">Имя*:</label>
+                  <input class="review__input review__input--introducing" id="username" type="text" name="username" placeholder="Петр" required>
                 </div>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
-                  <label class="review__label" for="user-surname">Фамилия*:</label>
-                    <input class="review__input" id="user-surname" type="text" name="user-surname" placeholder="Иванов" required>
+                  <label class="review__label review__label--introducing" for="user-surname">Фамилия*:</label>
+                    <input class="review__input review__input--introducing" id="user-surname" type="text" name="user-surname" placeholder="Иванов" required>
                 </div>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
-                  <label class="review__label" for="user-patronymic">Отчество:</label>
-                    <input class="review__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+                  <label class="review__label review__label--introducing" for="user-patronymic">Отчество:</label>
+                    <input class="review__input review__input--introducing" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
                 </div>
               </fieldset>
 
@@ -144,7 +145,7 @@
                     </label>
                   </li>
                   <li class="review__list-inner review__list-inner--sights">
-                    <label class="review__label review__label--checkbox">
+                    <label class="review__label review__label--checkbox review__label--bell">
                       <input class="review__input visually-hidden" type="checkbox" name="bell-mountain" checked>
                       <span class="review__input-checkbox"></span>
                       Гора-Колокол
@@ -158,8 +159,8 @@
                     </label>
                   </li>
                   <li class="review__list-inner review__list-inner--sights">
-                    <label class="review__label review__label--checkbox">
-                      <input class="review__input visually-hidden" type="checkbox" name="red-mountains">
+                    <label class="review__label review__label--checkbox review__label--rocks">
+                      <input class="review__input visually-hidden" type="checkbox" name="red-rocks">
                       <span class="review__input-checkbox"></span>
                       Красные скалы
                     </label>

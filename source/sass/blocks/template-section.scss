@@ -92,11 +92,16 @@
   padding: 36px 0 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 34px 102px 25px;
+    padding: 63px 102px 25px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 114px 262px 60px;
+    padding: 0px 259px 0px 265px;
+    margin-bottom: 61px;
+    margin-top: 114px;
+
+    outline: 2px solid red;
   }
 
   &::after {

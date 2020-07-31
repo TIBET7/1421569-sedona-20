@@ -36,6 +36,10 @@
 
 .review--textarea {
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .review--textarea::after {
@@ -63,6 +67,10 @@
 
   &--textarea {
     margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 57px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -92,7 +100,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 78px;
+    margin-left: 85px;
   }
 }
 
@@ -123,7 +131,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-right: 10px;
+    padding-right: 5px;
   }
 }
 
@@ -134,13 +142,18 @@
   margin-top: 8px;
   margin-bottom: 12px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
   &::placeholder {
     padding-left: 1px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    max-width: 275px;
+    max-width: 315px;
+    margin-left: 12px;
   }
 }
 
@@ -170,7 +183,7 @@
   background: #e6e6e6 url("../img/svg/icon-phone.svg") no-repeat center center;
 
   @media (min-width: $desktop-width) {
-    right: 127px;
+    right: 75px;
   }
 }
 
@@ -198,26 +211,46 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 83px;
   }
 }
 
 .review__label--checkbox {
   margin-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.review__label--bell,
+.review__label--rocks {
+  @media (min-width: $tablet-width) {
+    padding-left: 79px;
+  }
 }
 
 .review__input-radio,
 .review__input-checkbox {
   position: absolute;
-  margin-left: -75px;
-  margin-top: -10px;
+  margin-left: -79px;
+  margin-top: -16px;
 
-  width: 46px;
-  height: 46px;
+  width: 55px;
+  height: 55px;
 
   background-color: $light-gray;
   border: 5px solid $light-gray;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -75px;
+  }
 }
 
 .review__input-checkbox {
@@ -255,6 +288,8 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
+    outline: 1px solid green;
+
     &::after {
       position: absolute;
       width: 1px;
@@ -268,21 +303,29 @@
   }
 
   .review__title--impressions {
-    margin-bottom: 40px;
-
+    margin-bottom: 72px;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__title--impressions {
-    margin-left: 75px;
+    margin-left: 81px;
+    margin-bottom: 73px;
   }
 }
 
 /* Introduce yourself */
 .review--introducing {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -292,21 +335,49 @@
   }
 
   .review__title--introducing {
-    margin-bottom: 25px;
-    margin-left: 58px;
+    margin-bottom: 56px;
+    margin-left: 56px;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__title--introducing {
-    margin-left: 78px;
+    margin-left: 81px;
+  }
+}
+
+.review__label--introducing {
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+}
+
+.review__input--introducing {
+  @media (min-width: $tablet-width) {
+    padding: 22px 0 18px 14px;
+    margin-left: 0px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 22px 0 18px 12px;
+
+    &::placeholder {
+      padding-left: 14px;
+    }
   }
 }
 
 /* Contacts */
 .review__title--contacts {
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -339,10 +410,6 @@
   .review--contacts {
     margin-bottom: 50px;
   }
-
-  .review__title--contacts {
-    margin-bottom: 40px;
-  }
 }
 
 /* Sights */
@@ -354,6 +421,8 @@
   .review--sights {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
+
+    margin-bottom: 23px;
   }
 
   .review__list--sights {
@@ -377,32 +446,27 @@
   .review__title--sights {
     padding-right: 150px;
     padding-left: 150px;
-    margin-bottom: 48px;
+    margin-bottom: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__list--sights {
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
   }
 
   .review__title--sights {
-    padding-right: 300px;
-    padding-left: 300px;
+    padding-right: 295px;
+    padding-left: 305px;
   }
 
   .review__list-inner--sights {
-    width: 20%;
-
-    &:nth-child(2),
-    &:nth-child(4) {
-      margin-left: 0;
-    }
+    max-width: 210px;
   }
 
   .review__label--checkbox {
-    padding-left: 70px;
+
   }
 }
 

@@ -25,6 +25,13 @@
   }
 }
 
+.page-footer--form {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    margin-top: 98px;
+  }
+}
+
 .page-footer__title {
   margin: 0;
   margin-bottom: 35px;
@@ -37,6 +44,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    margin-left: 119px;
+    margin-left: 60px;
   }
 }

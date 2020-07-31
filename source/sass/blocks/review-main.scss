@@ -64,6 +64,12 @@
   }
 }
 
+.review-main__img-text--form {
+  @media (min-width: $tablet-width) {
+    top: 46%;
+  }
+}
+
 .review-main__wrapper {
   padding: 0 20px;
 
