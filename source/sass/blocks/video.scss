@@ -1,10 +1,19 @@
 .video {
   margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 200px;
+  }
 }
 
-@media (min-width: $tablet-width) {
   .video__item {
+    @media (min-width: $tablet-width) {
     width: 648px;
+    height: 500px;
+  }
+
+    @media (min-width: $desktop-width) {
+    width: 800px;
     height: 500px;
   }
 }
