@@ -11,8 +11,12 @@
 
   color: $black;
 
-  &--local-vegetation {
+  &--vegetation {
     margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 36px;
+    }
   }
 
   &::before {
@@ -31,6 +35,22 @@
 @media (min-width: $tablet-width) {
   .likes__count {
     margin-bottom: 0;
+
+    &--spaces {
+      margin-left: 395px;
+    }
+
+    &--road {
+      margin-left: 103px;
+    }
+
+    &--bridge {
+      margin-left: 102px;
+    }
+
+    &::before {
+      left: 6px;
+    }
   }
 }
 

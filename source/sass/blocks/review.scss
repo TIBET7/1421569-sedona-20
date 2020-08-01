@@ -183,7 +183,7 @@
   background: #e6e6e6 url("../img/svg/icon-phone.svg") no-repeat center center;
 
   @media (min-width: $desktop-width) {
-    right: 75px;
+    right: 79px;
   }
 }
 
@@ -216,7 +216,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 83px;
+    padding-left: 79px;
   }
 }
 
@@ -288,8 +288,6 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
-    outline: 1px solid green;
-
     &::after {
       position: absolute;
       width: 1px;
@@ -310,7 +308,7 @@
 
 @media (min-width: $desktop-width) {
   .review__title--impressions {
-    margin-left: 81px;
+    margin-left: 79px;
     margin-bottom: 73px;
   }
 }
@@ -343,7 +341,7 @@
 
 @media (min-width: $desktop-width) {
   .review__title--introducing {
-    margin-left: 81px;
+    margin-left: 79px;
   }
 }
 
@@ -351,6 +349,11 @@
   @media (min-width: $tablet-width) {
     margin-right: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
+
 }
 
 .review__input--introducing {
@@ -457,8 +460,8 @@
   }
 
   .review__title--sights {
-    padding-right: 295px;
-    padding-left: 305px;
+    padding-right: 290px;
+    padding-left: 292px;
   }
 
   .review__list-inner--sights {
@@ -469,7 +472,6 @@
 
   }
 }
-
 
 /* Emotions */
 @media (min-width: $tablet-width) {

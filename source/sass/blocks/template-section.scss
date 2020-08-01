@@ -33,6 +33,10 @@
 
   &--photo {
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 32px;
+    }
   }
 
   &--photos {
@@ -41,11 +45,6 @@
     @media (min-width: $tablet-width) {
       font-size: 30px;
     }
-  }
-
-
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
   }
 }
 
@@ -82,8 +81,6 @@
       margin-bottom: 29px;
     }
   }
-
-
 }
 
 .template-section--review {
@@ -100,8 +97,6 @@
     padding: 0px 259px 0px 265px;
     margin-bottom: 61px;
     margin-top: 114px;
-
-    outline: 2px solid red;
   }
 
   &::after {
@@ -140,6 +135,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 58px 95px 5px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {

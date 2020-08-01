@@ -18,6 +18,11 @@
     justify-content: space-around;
     align-items: center;
     margin: 36px 0 23px;
+
+    &--photo {
+      margin-top: 119px;
+      justify-content: flex-start;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -45,5 +50,9 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
   }
 }

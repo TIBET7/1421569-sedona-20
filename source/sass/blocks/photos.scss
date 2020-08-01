@@ -55,7 +55,7 @@
 
   .photos__item-inner-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     margin: 0 20px;
@@ -64,11 +64,27 @@
   .photos__item-title {
     margin: 0;
     margin-top: 22px;
+
+    &--road {
+      margin-top: 16px;
+    }
+
+    &--bridge {
+      margin-top: 15px;
+    }
+  }
+
+  .photos__item-title--spaces {
+    margin-top: 15px;
+  }
+
+  .photos__item-title--vegetation {
+    margin-top: 16px;
   }
 
   .photos__item-text {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 17px;
   }
 }
 
