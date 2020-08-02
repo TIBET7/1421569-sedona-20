@@ -253,18 +253,14 @@
   width: 55px;
   height: 55px;
 
-  background-color: $light-gray;
-  border: 5px solid $light-gray;
-  border-radius: 50%;
+  background: url('../img/svg/radio/radio.svg');
 
   &:hover {
-    background-color: $special-gray;
-    border-color: $special-gray;
+    background: url('../img/svg/radio/radio-hover.svg');
   }
 
   &:active {
-    background-color: $active-gray;
-    border-color: $active-gray;
+    background: url('../img/svg/radio/radio-active.svg');
   }
 
   @media (min-width: $tablet-width) {
@@ -272,8 +268,40 @@
   }
 }
 
+.review__input:checked + .review__input-radio {
+  background: url('../img/svg/radio/radio-checked.svg');
+
+  &:hover {
+    background: url('../img/svg/radio/radio-checked-hover.svg');
+  }
+
+  &:active {
+    background: url('../img/svg/radio/radio-checked-active.svg');
+  }
+}
+
 .review__input-checkbox {
-  border-radius: 0;
+  background: url('../img/svg/checkbox/ckeckbox.svg');
+
+  &:hover {
+    background: url('../img/svg/checkbox/checkbox-hover.svg');
+  }
+
+  &:active {
+    background: url('../img/svg/checkbox/checkbox-active.svg');
+  }
+}
+
+.review__input:checked + .review__input-checkbox {
+  background: url('../img/svg/checkbox/checkbox-checked.svg');
+
+  &:hover {
+    background: url('../img/svg/checkbox/checkbox-checked-hover.svg');
+  }
+
+  &:active {
+    background: url('../img/svg/checkbox/chekbox-checked-active.svg');
+  }
 }
 
 /* Textarea */

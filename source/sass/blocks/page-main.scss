@@ -16,7 +16,7 @@
 
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     z-index: 1;
 
     content: "";

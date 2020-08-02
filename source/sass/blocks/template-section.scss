@@ -39,7 +39,7 @@
     }
   }
 
-  &--photos {
+  &--presentation {
     margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
@@ -70,7 +70,7 @@
     line-height: 24px;
   }
 
-  &--photos {
+  &--presentation {
     line-height: 24px;
     margin-bottom: 0;
   }
@@ -133,7 +133,7 @@
   }
 }
 
-.template-section--photos {
+.template-section--presentation {
   padding: 12px 3px 12px;
   margin-bottom: 20px;
 

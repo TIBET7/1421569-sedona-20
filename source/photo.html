@@ -64,7 +64,11 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
-                    <img class="photos__item-image photos__item-image--first" src="./img/jpg/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="">
+                      <source media="(min-width: 1200px)" srcset="">
+                      <img class="photos__item-image photos__item-image--first" src="./img/jpg/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+                    </picture>
                   </a>
                   <div class="photos__item-inner-text">
                     <div>
@@ -81,6 +85,10 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/jpg/photo-cactus-tablet@1x.jpg">
+                      <source media="(min-width: 1200px)" srcset="./img/jpg/photo-roads-desktop@1x.jpg">
+                    </picture>
                     <img class="photos__item-image" src="./img/jpg/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
                   </a>
                   <div class="photos__item-inner-text">
@@ -98,7 +106,11 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
-                    <img class="photos__item-image" src="./img/jpg/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/jpg/photo-roads-tablet@1x.jpg">
+                      <source media="(min-width: 1200px)" srcset="">
+                      <img class="photos__item-image" src="./img/jpg/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                    </picture>
                   </a>
                   <div class="photos__item-inner-text">
                     <div>
@@ -115,7 +127,11 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
-                    <img class="photos__item-image" src="./img/jpg/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/jpg/photo-bridge-tablet@1x.jpg">
+                      <source media="(min-width: 1200px)" srcset="./img/jpg/photo-bridge-desktop@1x.jpg">
+                      <img class="photos__item-image" src="./img/jpg/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+                    </picture>
                   </a>
                   <div class="photos__item-inner-text">
                     <div>
@@ -133,14 +149,26 @@
           </section><!-- ./photos-->
 
           <!-- Template-section -->
-          <section class="template-section template-section--photos">
-            <h2 class="template-section__title template-section__title--photos">Все еще сомневаетесь?</h2>
-            <p class="template-section__text template-section__text--photos">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <section class="template-section template-section--presentation">
+            <h2 class="template-section__title template-section__title--presentation">Все еще сомневаетесь?</h2>
+            <p class="template-section__text template-section__text--presentation">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </section>
         </div><!-- ./photo-main__wrapper-->
         <!-- Video -->
-        <div class="video">
-          <video class="video__item" poster="./img/jpg/video-mobile@1x.jpg" width="320" height="201" controls></video>
+        <div class="video-player">
+          <img src="./img/jpg/video-mobile@1x.jpg" width="320" height="201" alt="Презентация">
+          <div class="video-player__controls">
+            <div class="video-player__controls-top">
+              <div class="video-player__timeline">
+                <div class="video-player__timeline-toggle"></div>
+              </div>
+            </div>
+            <div class="video-player__controls-bottom">
+              <button class="video-player__button video-player__button--replay" type="button" title="Повторить видео"></button>
+              <button class="video-player__button video-player__button--closed-caption" type="button" title="Скрытые субтитры"></button>
+              <button class="video-player__button video-player__button--fullscreen" type="button" title="Полноэкранный режим"></button>
+            </div>
+          </div>
         </div>
 
       </main><!-- ./photo-main-->
