@@ -37,6 +37,26 @@
   @include blue-design;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+  &:hover {
+    color: $light-blue;
+  }
+
+  &:active {
+    color: rgba(1, 1, 1, 0.3);
+  }
+
+  &--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 150px;
     margin: 0;
