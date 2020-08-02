@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 60px;
 
-    &:before {
+    &::before {
       position: absolute;
       bottom: 37px;
       left: 35px;
@@ -18,7 +18,7 @@
       background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z' fill='%23ffffff'/%3E%3C/svg%3E");
     }
 
-    &:after {
+    &::after {
       position: absolute;
       bottom: 37px;
       right: 35px;
@@ -37,32 +37,32 @@
   }
 }
 
-  .video-player:hover::before,
-  .video-player:hover::after {
-    @media (min-width: $tablet-width) {
-      opacity: 0.6;
-    }
+.video-player:hover::before,
+.video-player:hover::after {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
   }
+}
 
-  .video-player:active::before,
-  .video-player:active::after {
-    @media (min-width: $tablet-width) {
-      opacity: 0.3;
-    }
+.video-player:active::before,
+.video-player:active::after {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
   }
+}
 
-  .video-player img {
-    @media (min-width: $tablet-width) {
+.video-player img {
+  @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 800px;
-      height: 500px;
-      margin: 0;
-    }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 500px;
+    margin: 0;
+  }
+}
 
 .video-player__controls {
   position: absolute;
@@ -78,7 +78,7 @@
 
   background-color: transparent;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     top: 407px;
     left: -20px;
 
@@ -140,17 +140,17 @@
   }
 }
 
-  .video-player__timeline:hover::after {
-    @media (min-width: $tablet-width) {
-      opacity: 0.6;
-    }
+.video-player__timeline:hover::after {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
   }
+}
 
-  .video-player__timeline:active::after {
-    @media (min-width: $tablet-width) {
-      opacity: 0.3;
-    }
+.video-player__timeline:active::after {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
   }
+}
 
 .video-player__timeline-toggle {
   position: absolute;
@@ -173,7 +173,7 @@
 
   height: 66px;
 
-  background-color: $light-gray ;
+  background-color: $light-gray;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -200,7 +200,7 @@
   width: 16px;
   height: 20px;
 
-  background: url(../img/svg/replay.svg) no-repeat 0 0;
+  background: url("../img/svg/replay.svg") no-repeat 0 0;
   background-size: cover;
 
   &:hover {
@@ -211,7 +211,6 @@
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z' fill='%23333333'/%3E%3C/svg%3E%0A");
     opacity: 0.3;
   }
-
 }
 
 .video-player__button--closed-caption {
@@ -222,7 +221,7 @@
   width: 32px;
   height: 20px;
 
-  background: url(../../img/svg/subtitles.svg) no-repeat 0 0;
+  background: url("../../img/svg/subtitles.svg") no-repeat 0 0;
   background-size: cover;
 
   &:hover {
@@ -242,7 +241,7 @@
   width: 20px;
   height: 20px;
 
-  background: url(../../img/svg/fullscreen.svg) no-repeat 0 0;
+  background: url("../../img/svg/fullscreen.svg") no-repeat 0 0;
   background-size: cover;
 
   &:hover {

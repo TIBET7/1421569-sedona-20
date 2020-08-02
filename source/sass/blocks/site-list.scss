@@ -75,7 +75,7 @@
     }
 
     &:nth-child(4) {
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
 
@@ -103,6 +103,5 @@
 .site-list__item a {
   display: inline-block;
   vertical-align: middle;
-  padding: 16px 0 11px;
   padding: 0;
 }

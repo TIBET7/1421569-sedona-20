@@ -7,6 +7,11 @@
 
   &--form {
     margin-top: 42px;
+
+    @media (min-width: $tablet-width) {
+      justify-content: flex-start;
+      margin-top: 98px;
+    }
   }
 
   &--photo {
@@ -27,13 +32,6 @@
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-  }
-}
-
-.page-footer--form {
-  @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-    margin-top: 98px;
   }
 }
 

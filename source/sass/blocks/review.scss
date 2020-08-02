@@ -253,14 +253,14 @@
   width: 55px;
   height: 55px;
 
-  background: url('../img/svg/radio/radio.svg');
+  background: url("../img/svg/radio/radio.svg");
 
   &:hover {
-    background: url('../img/svg/radio/radio-hover.svg');
+    background: url("../img/svg/radio/radio-hover.svg");
   }
 
   &:active {
-    background: url('../img/svg/radio/radio-active.svg');
+    background: url("../img/svg/radio/radio-active.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -269,38 +269,38 @@
 }
 
 .review__input:checked + .review__input-radio {
-  background: url('../img/svg/radio/radio-checked.svg');
+  background: url("../img/svg/radio/radio-checked.svg");
 
   &:hover {
-    background: url('../img/svg/radio/radio-checked-hover.svg');
+    background: url("../img/svg/radio/radio-checked-hover.svg");
   }
 
   &:active {
-    background: url('../img/svg/radio/radio-checked-active.svg');
+    background: url("../img/svg/radio/radio-checked-active.svg");
   }
 }
 
 .review__input-checkbox {
-  background: url('../img/svg/checkbox/ckeckbox.svg');
+  background: url("../img/svg/checkbox/ckeckbox.svg");
 
   &:hover {
-    background: url('../img/svg/checkbox/checkbox-hover.svg');
+    background: url("../img/svg/checkbox/checkbox-hover.svg");
   }
 
   &:active {
-    background: url('../img/svg/checkbox/checkbox-active.svg');
+    background: url("../img/svg/checkbox/checkbox-active.svg");
   }
 }
 
 .review__input:checked + .review__input-checkbox {
-  background: url('../img/svg/checkbox/checkbox-checked.svg');
+  background: url("../img/svg/checkbox/checkbox-checked.svg");
 
   &:hover {
-    background: url('../img/svg/checkbox/checkbox-checked-hover.svg');
+    background: url("../img/svg/checkbox/checkbox-checked-hover.svg");
   }
 
   &:active {
-    background: url('../img/svg/checkbox/chekbox-checked-active.svg');
+    background: url("../img/svg/checkbox/chekbox-checked-active.svg");
   }
 }
 
@@ -400,14 +400,14 @@
   @media (min-width: $desktop-width) {
     margin-right: 5px;
   }
-
 }
 
 .review__input--introducing {
   @media (min-width: $tablet-width) {
     padding: 22px 0 18px 14px;
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding: 22px 0 18px 12px;
 
@@ -513,10 +513,6 @@
 
   .review__list-inner--sights {
     max-width: 210px;
-  }
-
-  .review__label--checkbox {
-
   }
 }
 

@@ -12,4 +12,3 @@ if (document.querySelector('review-main')) {
     }
   })
 }
-
