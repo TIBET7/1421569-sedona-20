@@ -16,7 +16,7 @@
 
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     z-index: 1;
 
     content: "";
@@ -53,7 +53,12 @@
   transform: translate3d(-50%, -50%, 0);
 
   @media (min-width: $tablet-width) {
+    top: 49%;
     width: 461px;
     height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 8px);
   }
 }

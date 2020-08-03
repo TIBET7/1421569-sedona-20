@@ -17,4 +17,12 @@
 
 .button--form {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 37px 15px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 26px 15px 27px;
+  }
 }

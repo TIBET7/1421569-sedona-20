@@ -3,16 +3,52 @@
   flex-direction: column;
   text-align: center;
   padding: 34px 34px 15px 31px;
+
+  &--index {
+    padding: 31px 35px 15px 30px;
+
+    @media (min-width: $tablet-width) {
+      padding: 44px 29px 15px 30px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 12px;
+      margin-bottom: 1px;
+    }
+  }
 }
 
 .template-section__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   @include basic-title;
 
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
+  &--review {
+    margin-bottom: 37px;
+    margin-left: 5px;
+    line-height: 24px;
+  }
+
+  &--photo {
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &--presentation {
+    margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 33px;
+    }
   }
 }
 
@@ -25,28 +61,46 @@
 
 .template-section__text {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   @include basic-text;
-}
 
-.template-section__text--review {
-  margin-bottom: 0;
+  &--photo {
+    margin-bottom: 53px;
+    line-height: 24px;
+  }
+
+  &--presentation {
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  &--review {
+    margin-bottom: 0;
+  }
+
+  &--slogan {
+    @media (min-width: $tablet-width) {
+      margin-top: 34px;
+      margin-bottom: 29px;
+    }
+  }
 }
 
 .template-section--review {
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
+  margin-bottom: 18px;
+  padding: 36px 0 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 34px 102px 25px;
+    padding: 63px 102px 25px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 114px 262px 60px;
+    padding: 0 259px 0 265px;
+    margin-bottom: 61px;
+    margin-top: 114px;
   }
 
   &::after {
@@ -68,39 +122,37 @@
 }
 
 .template-section--photo {
-  padding: 28px 0 5px;
+  padding: 33px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 64px 105px 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 64px 380px 25px;
+    padding: 105px 380px 25px;
   }
 }
 
-.template-section--photos {
-  padding: 28px 3px 5px;
+.template-section--presentation {
+  padding: 12px 3px 12px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 58px 95px 5px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 370px 5px;
-  }
-}
-
-.template-section__title--photos {
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
+    padding: 62px 370px 5px;
+    margin-bottom: 71px;
   }
 }
 
 .template-section__title--slogan {
+  margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     max-width: 520px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
   }
 }

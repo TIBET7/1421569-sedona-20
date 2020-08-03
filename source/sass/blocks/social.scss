@@ -7,6 +7,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-left: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 270px;
   }
 }
 
@@ -29,12 +34,36 @@
 
 .social__link--twitter {
   background: $light-blue url("../img/svg/icon-twitter.svg") no-repeat center center;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
 }
 
 .social__link--facebook {
   background: $light-blue url("../img/svg/icon-facebook.svg") no-repeat center center;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
 }
 
 .social__link--youtube {
   background: $light-blue url("../img/svg/icon-youtube.svg") no-repeat center center;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
 }

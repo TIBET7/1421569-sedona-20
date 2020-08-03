@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 154px;
+  }
 }
 
 .copyright__text {
@@ -11,9 +19,21 @@
   text-transform: uppercase;
 
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 116px;
+  }
 }
 
 .copyright__link {
   display: block;
   margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+  }
 }

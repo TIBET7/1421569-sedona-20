@@ -13,14 +13,14 @@
       <header class="page-header">
 
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="./img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
+          <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
         </a>
 
         <nav class="main-nav">
           <button class="main-nav__toogle" type="button">
             <span class="visually-hidden">Меню</span>
             <svg width="23" height="22">
-              <use xlink:href="./img/svg/sprite.svg#menu"></use>
+              <use xlink:href="img/svg/sprite.svg#menu"></use>
             </svg>
           </button>
           <div class="main-nav__wrapper">
@@ -46,7 +46,7 @@
       <main class="review-main">
         <h1 class="visually-hidden">Отзыв об отелях Седоны</h1>
         <div class="review-main__img">
-          <div class="review-main__img-text"></div>
+          <div class="review-main__img-text review-main__img-text--form"></div>
         </div>
 
         <div class="review-main__wrapper">
@@ -59,6 +59,7 @@
           <!-- Form -->
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__wrapper">
+
               <!-- Introduce yourself -->
               <fieldset class="review review--introducing">
                 <legend class="review__title review__title--introducing">
@@ -66,18 +67,18 @@
                 </legend>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
-                  <label class="review__label" for="username">Имя*:</label>
-                  <input class="review__input" id="username" type="text" name="username" placeholder="Петр" required>
+                  <label class="review__label review__label--introducing" for="username">Имя*:</label>
+                  <input class="review__input review__input--introducing" id="username" type="text" name="username" placeholder="Петр" required>
                 </div>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
-                  <label class="review__label" for="user-surname">Фамилия*:</label>
-                    <input class="review__input" id="user-surname" type="text" name="user-surname" placeholder="Иванов" required>
+                  <label class="review__label review__label--introducing" for="user-surname">Фамилия*:</label>
+                    <input class="review__input review__input--introducing" id="user-surname" type="text" name="user-surname" placeholder="Иванов" required>
                 </div>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
-                  <label class="review__label" for="user-patronymic">Отчество:</label>
-                    <input class="review__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+                  <label class="review__label review__label--introducing" for="user-patronymic">Отчество:</label>
+                    <input class="review__input review__input--introducing" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
                 </div>
               </fieldset>
 
@@ -144,7 +145,7 @@
                     </label>
                   </li>
                   <li class="review__list-inner review__list-inner--sights">
-                    <label class="review__label review__label--checkbox">
+                    <label class="review__label review__label--checkbox review__label--bell">
                       <input class="review__input visually-hidden" type="checkbox" name="bell-mountain" checked>
                       <span class="review__input-checkbox"></span>
                       Гора-Колокол
@@ -158,8 +159,8 @@
                     </label>
                   </li>
                   <li class="review__list-inner review__list-inner--sights">
-                    <label class="review__label review__label--checkbox">
-                      <input class="review__input visually-hidden" type="checkbox" name="red-mountains">
+                    <label class="review__label review__label--checkbox review__label--rocks">
+                      <input class="review__input visually-hidden" type="checkbox" name="red-rocks">
                       <span class="review__input-checkbox"></span>
                       Красные скалы
                     </label>
@@ -169,7 +170,7 @@
 
               <!-- Emotions-->
               <fieldset class="review review--textarea">
-                <legend class="review__title">
+                <legend class="review__title review__title--textarea">
                   Опишите свои эмоции:
                 </legend>
                 <label class="review__label">
@@ -192,7 +193,7 @@
       </main><!-- ./review-main-->
 
           <!-- Footer -->
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--form">
         <h2 class="page-footer__title">#VisitSedona</h2>
           <section class="page-footer__social social">
             <h3 class="social__title visually-hidden">Мы в социальных сетях</h3>
@@ -219,7 +220,7 @@
 
     <!-- Modal-failure -->
     <!-- Template-section -->
-    <section class="template-section modal">
+    <section class="template-section modal modal--failure">
       <h2 class="template-section__title">Что-то пошло не так!</h2>
       <p class="template-section__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button button--failure" type="button">Ок</button>
@@ -228,12 +229,11 @@
 
     <!-- Modal-success -->
     <!-- Template-section -->
-    <section class="template-section modal">
+    <section class="template-section modal modal--success">
       <h2 class="template-section__title">Ваш отзыв отправлен!</h2>
       <p class="template-section__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <button class="button" type="button">Закрыть окно</button>
     </section>
-
 
   </body>
 </html>

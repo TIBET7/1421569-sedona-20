@@ -13,14 +13,14 @@
       <header class="page-header">
 
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="./img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
+          <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
         </a>
 
         <nav class="main-nav">
           <button class="main-nav__toogle" type="button">
             <span class="visually-hidden">Меню</span>
             <svg width="23" height="22">
-              <use xlink:href="./img/svg/sprite.svg#menu"></use>
+              <use xlink:href="img/svg/sprite.svg#menu"></use>
             </svg>
           </button>
           <div class="main-nav__wrapper">
@@ -54,7 +54,7 @@
           <!-- Template-section -->
           <section class="template-section template-section--photo">
             <h2 class="template-section__title template-section__title--photo">Фото и видео</h2>
-            <p class="template-section__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <p class="template-section__text template-section__text--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </section>
 
           <!-- Photos -->
@@ -64,16 +64,20 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
-                    <img class="photos__item-image photos__item-image--first" src="./img/jpg/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/jpg/photo-sunset-tablet@1x.jpg">
+                      <source media="(min-width: 1200px)" srcset="img/jpg/photo-sunset-desctop@1x.jpg">
+                      <img class="photos__item-image photos__item-image--first" src="img/jpg/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+                    </picture>
                   </a>
                   <div class="photos__item-inner-text">
                     <div>
-                      <h2 class="photos__item-title">Неродные просторы</h2>
+                      <h2 class="photos__item-title photos__item-title--spaces">Неродные просторы</h2>
                       <p class="photos__item-text">Автор фото: Борис</p>
                     </div>
                     <div class="likes">
                       <button class="likes__button visually-hidden" type="button">Лайк</button>
-                      <span class="likes__count">1350</span>
+                      <span class="likes__count likes__count--spaces">1350</span>
                     </div>
                   </div><!-- ./photos__item-inner-text-->
                 </figure>
@@ -81,16 +85,20 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
-                    <img class="photos__item-image" src="./img/jpg/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/jpg/photo-cactus-tablet@1x.jpg">
+                      <source media="(min-width: 1200px)" srcset="img/jpg/photo-roads-desktop@1x.jpg">
+                        <img class="photos__item-image" src="img/jpg/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+                    </picture>
                   </a>
                   <div class="photos__item-inner-text">
                     <div>
-                      <h2 class="photos__item-title">Местная растительность</h2>
+                      <h2 class="photos__item-title photos__item-title--vegetation">Местная растительность</h2>
                       <p class="photos__item-text">Автор фото: Сергей</p>
                     </div>
                     <div class="likes">
                       <button class="likes__button visually-hidden" type="button">Лайк</button>
-                      <span class="likes__count">143</span>
+                      <span class="likes__count likes__count--vegetation">143</span>
                     </div>
                   </div><!-- ./photos__item-inner-text-->
                 </figure>
@@ -98,16 +106,20 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
-                    <img class="photos__item-image" src="./img/jpg/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/jpg/photo-roads-tablet@1x.jpg">
+                      <source media="(min-width: 1200px)" srcset="img/jpg/photo-roads-desktop@1x.jpg">
+                      <img class="photos__item-image" src="img/jpg/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                    </picture>
                   </a>
                   <div class="photos__item-inner-text">
                     <div>
-                      <h2 class="photos__item-title">Дорога на север</h2>
+                      <h2 class="photos__item-title photos__item-title--road">Дорога на север</h2>
                       <p class="photos__item-text">Автор фото: Петр</p>
                     </div>
                     <div class="likes">
                       <button class="likes__button visually-hidden" type="button">Лайк</button>
-                      <span class="likes__count">96</span>
+                      <span class="likes__count likes__count--road">96</span>
                     </div>
                   </div><!-- ./photos__item-inner-text-->
                 </figure>
@@ -115,16 +127,20 @@
               <li class="photos__item">
                 <figure class="photos__item-inner">
                   <a href="#">
-                    <img class="photos__item-image" src="./img/jpg/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/jpg/photo-bridge-tablet@1x.jpg">
+                      <source media="(min-width: 1200px)" srcset="img/jpg/photo-bridge-desktop@1x.jpg">
+                      <img class="photos__item-image" src="img/jpg/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+                    </picture>
                   </a>
                   <div class="photos__item-inner-text">
                     <div>
-                      <h2 class="photos__item-title">Мост дьявола</h2>
-                      <p class="photos__item-text">Автор фото: Борис</p>
+                      <h2 class="photos__item-title photos__item-title--bridge">Мост дьявола</h2>
+                      <p class="photos__item-text">Автор фото: Антон</p>
                     </div>
                     <div class="likes">
                       <button class="likes__button visually-hidden" type="button">Лайк</button>
-                      <span class="likes__count">254</span>
+                      <span class="likes__count likes__count--bridge">254</span>
                     </div>
                   </div><!-- ./photos__item-inner-text-->
                 </figure>
@@ -133,20 +149,32 @@
           </section><!-- ./photos-->
 
           <!-- Template-section -->
-          <section class="template-section template-section--photos">
-            <h2 class="template-section__title template-section__title--photos">Все еще сомневаетесь?</h2>
-            <p class="template-section__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <section class="template-section template-section--presentation">
+            <h2 class="template-section__title template-section__title--presentation">Все еще сомневаетесь?</h2>
+            <p class="template-section__text template-section__text--presentation">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </section>
         </div><!-- ./photo-main__wrapper-->
         <!-- Video -->
-        <div class="video">
-          <video class="video__item" poster="./img/jpg/video-mobile@1x.jpg" width="320" height="201" controls></video>
+        <div class="video-player">
+          <img src="img/jpg/video-mobile@1x.jpg" width="320" height="201" alt="Презентация">
+          <div class="video-player__controls">
+            <div class="video-player__controls-top">
+              <div class="video-player__timeline">
+                <div class="video-player__timeline-toggle"></div>
+              </div>
+            </div>
+            <div class="video-player__controls-bottom">
+              <button class="video-player__button video-player__button--replay" type="button" title="Повторить видео"></button>
+              <button class="video-player__button video-player__button--closed-caption" type="button" title="Скрытые субтитры"></button>
+              <button class="video-player__button video-player__button--fullscreen" type="button" title="Полноэкранный режим"></button>
+            </div>
+          </div>
         </div>
 
       </main><!-- ./photo-main-->
 
         <!-- Footer -->
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--photo">
         <h2 class="page-footer__title">#VisitSedona</h2>
           <section class="page-footer__social social">
             <h3 class="social__title visually-hidden">Мы в социальных сетях</h3>

@@ -11,16 +11,18 @@
 
       <!-- Header -->
       <header class="page-header">
-
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="./img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/svg/logo-desktop.svg">
+            <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
+          </picture>
         </a>
 
         <nav class="main-nav">
           <button class="main-nav__toogle" type="button">
             <span class="visually-hidden">Меню</span>
             <svg width="23" height="22">
-              <use xlink:href="./img/svg/sprite.svg#menu"></use>
+              <use xlink:href="img/svg/sprite.svg#menu"></use>
             </svg>
           </button>
           <div class="main-nav__wrapper">
@@ -52,7 +54,7 @@
         <!-- Template-section -->
         <section class="template-section template-section--index">
             <h2 class="template-section__title template-section__title--slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="template-section__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <p class="template-section__text template-section__text--slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
 
         <!-- Advantages -->
@@ -61,48 +63,56 @@
             <li class="advantages__item advantages__item--blue">
               <div class="advantages__item-text">
                 <h3 class="advantages__item-title advantages__item-title--first">Настоящий городок</h3>
-                <p class="advantages__item-number">&#8211; №1 &#8211;</p>
+                <p class="advantages__item-number">&#8212; №1 &#8212;</p>
                 <p class="advantages__item-description advantages__item-description--real-town">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-              <img class="advantages__item-image" src="./img/jpg/main-city-mobile@1x.jpg" width="320" height="260" alt="Город Седона">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/jpg/main-city-tablet.jpg">
+                  <source media="(min-width: 1200px)" srcset="img/jpg/main-city-desktop.jpg">
+                  <img class="advantages__item-image" src="img/jpg/main-city-mobile@1x.jpg" width="320" height="260" alt="Город Седона">
+                </picture>
               <ul class="town-advantages">
                 <li class="town-advantages__item town-advantages__item--housing">
                   <h4 class="town-advantages__title">Жилье</h4>
                   <p class="town-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="town-advantages__item town-advantages__item--souvenirs">
-                  <h4 class="town-advantages__title">Сувениры</h4>
-                  <p class="town-advantages__description">Не только китайского, но и местного производства!</p>
+                  <h4 class="town-advantages__title town-advantages__title--souvenirs">Сувениры</h4>
+                  <p class="town-advantages__description town-advantages__description--souvenirs">Не только китайского,<br> но и местного производства!</p>
                 </li>
                 <li class="town-advantages__item town-advantages__item--food">
-                  <h4 class="town-advantages__title">Еда</h4>
+                  <h4 class="town-advantages__title town-advantages__title--food">Еда</h4>
                   <p class="town-advantages__description town-advantages__description--food">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
             <li class="advantages__item advantages__item--blue">
               <div class="advantages__item-text advantages__item-text--bridge">
-                <h3 class="advantages__item-title">Там есть мост дьявола</h3>
-                <p class="advantages__item-number">&#8211; №2 &#8211;</p>
+                <h3 class="advantages__item-title advantages__item-title--bridge">Там есть мост дьявола</h3>
+                <p class="advantages__item-number advantages__item-number--bridge">&#8212; №2 &#8212;</p>
                 <p class="advantages__item-description advantages__item-description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__item-image advantages__item-image--bridge" src="./img/jpg/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола ">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/jpg/photo-bridge-tablet.jpg">
+                <source media="(min-width: 1200px)" srcset="img/jpg/photo-bridge-desktop.jpg">
+                <img class="advantages__item-image advantages__item-image--bridge" src="img/jpg/bridge-mobile.jpg" width="320" height="260" alt="Мост дьявола ">
+              </picture>
             </li>
             <div class="advantages__wrapper">
               <li class="advantages__item advantages__item--no-image">
-                <h3 class="advantages__item-title advantages__item-title--no-image">Небольшая площадь</h3>
-                <p class="advantages__item-number">&#8211; №3 &#8211;</p>
+                <h3 class="advantages__item-title advantages__item-title--no-image advantages__item-title--area">Небольшая площадь</h3>
+                <p class="advantages__item-number advantages__item-number--area">&#8212; №3 &#8212;</p>
                 <p class="advantages__item-description advantages__item-description--no-image advantages__item-description--area">Все интересные места находятся очень близко</p>
               </li>
               <li class="advantages__item advantages__item--no-image">
-                <h3 class="advantages__item-title advantages__item-title--no-image">Красивая дорога</h3>
-                <p class="advantages__item-number">&#8211; №4 &#8211;</p>
+                <h3 class="advantages__item-title advantages__item-title--no-image advantages__item-title--road">Красивая дорога</h3>
+                <p class="advantages__item-number advantages__item-number--road">&#8212; №4 &#8212;</p>
                 <p class="advantages__item-description advantages__item-description--no-image advantages__item-description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="advantages__item advantages__item--no-image">
-                <h3 class="advantages__item-title advantages__item-title--no-image">Мало туристов</h3>
-                <p class="advantages__item-number">&#8211; №5 &#8211;</p>
-                <p class="advantages__item-description advantages__item-description--no-image">Большинство едет в Гранд Каньон и толпится там</p>
+                <h3 class="advantages__item-title advantages__item-title--no-image advantages__item-title--tourists">Мало туристов</h3>
+                <p class="advantages__item-number advantages__item-number--tourists">&#8212; №5 &#8212;</p>
+                <p class="advantages__item-description advantages__item-description--no-image advantages__item-description--tourists">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
             </div>
           </ul><!-- ./advantages__list-->
@@ -117,7 +127,11 @@
 
         <!-- Map -->
         <div class="map">
-          <img class="map__image" src="./img/jpg/bg-map-mobile@1x.jpg" width="320" height="350" alt="Как проехать в Седону">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/jpg/bg-map-tablet@1x.jpg">
+            <source media="(min-width: 1200px)" srcset="img/jpg/bg-map-desktop@1x.jpg">
+            <img class="map__image" src="img/jpg/bg-map-mobile@1x.jpg" width="320" height="350" alt="Как проехать в Седону">
+          </picture>
         </div>
       </main><!-- ./page-main-->
 
