@@ -11,17 +11,16 @@
 
       <!-- Header -->
       <header class="page-header">
-
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/svg/logo-desktop.svg">
+            <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="102" height="84" alt="Логотип &quot;Седона&quot;">
+          </picture>
         </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toogle" type="button">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toogle main-nav__toogle--closed" type="button">
             <span class="visually-hidden">Меню</span>
-            <svg width="23" height="22">
-              <use xlink:href="img/svg/sprite.svg#menu"></use>
-            </svg>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -38,6 +37,7 @@
                 HTML Academy
               </a></li>
             </ul>
+
           </div><!-- ./main-nav__wrapper-->
         </nav>
       </header>
@@ -198,5 +198,7 @@
           </div>
       </footer>
     </div><!-- ./container-->
+
+    <script src="js/script.js"></script>
   </body>
 </html>
