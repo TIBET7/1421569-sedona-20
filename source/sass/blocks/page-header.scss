@@ -15,13 +15,14 @@
 .page-header__logo-img {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: calc(100% - 56px);
   z-index: 1;
   transform: translateX(-50%);
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo-img {
+    top: 0;
     width: 187px;
     height: 96px;
   }
