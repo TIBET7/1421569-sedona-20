@@ -18,8 +18,10 @@
           </picture>
         </a>
 
-        <nav class="main-nav">
-
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toogle main-nav__toogle--closed" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active"><a href="index.html">
@@ -35,12 +37,7 @@
                 HTML Academy
               </a></li>
             </ul>
-            <button class="main-nav__toogle" type="button">
-              <span class="visually-hidden">Меню</span>
-              <svg width="23" height="22">
-                <use xlink:href="img/svg/sprite.svg#menu"></use>
-              </svg>
-            </button>
+
           </div><!-- ./main-nav__wrapper-->
         </nav>
       </header>
@@ -161,5 +158,8 @@
           </div>
       </footer>
     </div><!-- ./container-->
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>
