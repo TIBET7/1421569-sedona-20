@@ -1,5 +1,6 @@
 .site-list {
-  display: none;
+  position: relative;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -27,6 +28,8 @@
 
 .site-list__item {
   width: 100%;
+  padding-top: 9px;
+  padding-bottom: 5px;
   text-align: center;
 
   font-size: 18px;
@@ -36,6 +39,26 @@
 
   @include blue-design;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:first-child {
+    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  }
+
+  &:last-child {
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  &::before {
+    position: absolute;
+    top: 17px;
+    right: 19px;
+
+    content: "";
+    width: 22px;
+    height: 22px;
+
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22.199px' height='22.199px' viewBox='0 0 22.199 22.199' enable-background='new 0 0 22.199 22.199' xml:space='preserve'%3E%3Cpolygon points='22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 '/%3E%3C/svg%3E");
+  }
 
   &:hover {
     color: $light-blue;
