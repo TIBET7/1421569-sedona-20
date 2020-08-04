@@ -28,6 +28,12 @@
   &--photo {
     padding-right: 3px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .copyright__link {
@@ -46,6 +52,13 @@
   &--photo {
     @media (min-width: $desktop-width) {
       margin-left: 10px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      margin-left: 12px;
+      padding: 0;
     }
   }
 }

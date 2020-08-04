@@ -26,9 +26,17 @@
   @include basic-title;
 
   &--review {
-    margin-bottom: 37px;
+    margin-bottom: 32px;
     margin-left: 5px;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 37px;
+    }
   }
 
   &--photo {
@@ -88,6 +96,7 @@
 
   &--review {
     margin-bottom: 0;
+    line-height: 23px;
   }
 
   &--slogan {
@@ -110,7 +119,7 @@
 
 .template-section--review {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   padding: 36px 0 25px;
 
   @media (min-width: $tablet-width) {
@@ -119,8 +128,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 259px 0 265px;
-    margin-bottom: 61px;
+    padding: 0 263px 0 261px;
+    margin-bottom: 57px;
     margin-top: 114px;
   }
 
