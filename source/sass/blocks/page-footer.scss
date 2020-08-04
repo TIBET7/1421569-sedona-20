@@ -15,7 +15,7 @@
   }
 
   &--photo {
-    margin-top: 140px;
+    margin-top: 142px;
   }
 
   @media (min-width: $tablet-width) {
@@ -25,13 +25,17 @@
     margin: 32px 0 36px;
 
     &--photo {
-      margin-top: 119px;
+      margin-top: 75px;
       justify-content: flex-start;
     }
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
+
+    &--photo {
+      margin-top: 120px;
+    }
   }
 }
 
@@ -39,7 +43,7 @@
   margin: 0;
   margin-bottom: 35px;
   padding-right: 3px;
-  
+
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -54,5 +58,9 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 120px;
+  }
+
+  &--photo {
+    margin-bottom: 34px;
   }
 }
