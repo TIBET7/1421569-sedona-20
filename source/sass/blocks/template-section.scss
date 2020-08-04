@@ -80,6 +80,11 @@
   }
 
   &--slogan {
+    margin-bottom: 33px;
+    padding-left: 5px;
+
+    line-height: 25px;
+
     @media (min-width: $tablet-width) {
       margin-top: 34px;
       margin-bottom: 29px;
@@ -149,10 +154,13 @@
 }
 
 .template-section__title--slogan {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
+  line-height: 27px;
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
     margin: 0 auto;
+
+    font-size: 21px;
   }
 }

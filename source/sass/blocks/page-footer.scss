@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 38px 0 26px;
+  margin: 33px 0 26px;
 
   &--form {
     margin-top: 42px;
@@ -20,9 +20,9 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    margin: 36px 0 36px;
+    margin: 32px 0 36px;
 
     &--photo {
       margin-top: 119px;
@@ -38,6 +38,8 @@
 .page-footer__title {
   margin: 0;
   margin-bottom: 35px;
+  padding-right: 3px;
+  
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;

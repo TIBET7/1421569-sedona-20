@@ -5,9 +5,9 @@
   background: url("../img/jpg/bg-back-index/back-mobile@1x.jpg") no-repeat 0 0;
   background-size: cover;
 
-  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
-    background: url("../img/jpg/bg-back-index/back-mobile@2x.jpg") no-repeat center center;
-    background-size: 320px auto;
+  @media (min-resolution: 2dppx) {
+    background: url("../img/jpg/bg-back-index/back-mobile@2x.jpg") no-repeat 0 0;
+    background-size: $mobile-width-min auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,7 +16,7 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/jpg/bg-back-index/back-tablet@2x.jpg") no-repeat 0 0;
-      background-size: 768px auto;
+      background-size: $tablet-width auto;
     }
   }
 
@@ -25,7 +25,7 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/jpg/bg-back-index/back-desktop@2x.jpg") no-repeat 0 0;
-      background-size: 1200px auto;
+      background-size: $desktop-width auto;
     }
   }
 

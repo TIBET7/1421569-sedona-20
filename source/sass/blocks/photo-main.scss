@@ -7,7 +7,7 @@
 
   @media(min-resolution: 2dppx) {
     background: url("../img/jpg/bg-back/bg-back-mobile@2x.jpg") no-repeat center 100%;
-    background-size: 640px auto;
+    background-size: $mobile-width-only auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,7 +16,7 @@
 
     @media(min-resolution: 2dppx) {
       background: url("../img/jpg/bg-back/bg-back-tablet@2x.jpg") no-repeat center 100%;
-      background-size: 1536px auto;
+      background-size: $tablet-width auto;
     }
   }
 
@@ -26,7 +26,7 @@
 
     @media(min-resolution: 2dppx) {
       background: url("../img/jpg/bg-back/bg-back-desktop@2x.jpg") no-repeat center 100%;
-      background-size: 2400px auto;
+      background-size: $desktop-width auto;
     }
   }
 

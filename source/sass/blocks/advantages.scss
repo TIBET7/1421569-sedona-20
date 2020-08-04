@@ -102,7 +102,7 @@
 }
 
 .advantages__item-number {
-  margin: 12px 0;
+  margin: 11px 0 15px;
 
   @include basic-text;
 
@@ -110,7 +110,7 @@
   &--road,
   &--tourists {
     margin-top: 11px;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
   }
 
   &--bridge {
@@ -208,7 +208,6 @@
 
 .advantages__item-title--no-image {
   padding-top: 26px;
-  padding-right: 4px;
 }
 
 .advantages__item-title--road,
@@ -222,7 +221,7 @@
   }
 
   .advantages__item-title--no-image {
-    padding: 39px 49px 0;
+    padding: 43px 49px 0;
   }
 
   .advantages__item-description--no-image {
