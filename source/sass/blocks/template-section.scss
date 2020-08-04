@@ -86,8 +86,13 @@
     line-height: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 34px;
+      margin-top: 30px;
       margin-bottom: 29px;
+      padding-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 3px;
     }
   }
 }
@@ -162,5 +167,11 @@
     margin: 0 auto;
 
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 6px;
+
+    line-height: 26px;
   }
 }

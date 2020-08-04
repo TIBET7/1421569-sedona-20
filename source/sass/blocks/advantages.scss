@@ -93,7 +93,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 108px 0;
+    padding: 46px 108px 0;
 
     &--bridge {
       padding: 51px 125px 0;
@@ -104,6 +104,10 @@
 .advantages__item-number {
   margin: 11px 0 15px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
+
   @include basic-text;
 
   &--area,
@@ -111,6 +115,10 @@
   &--tourists {
     margin-top: 11px;
     margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
+    }
   }
 
   &--bridge {
