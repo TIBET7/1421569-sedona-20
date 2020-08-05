@@ -547,6 +547,12 @@
   }
 }
 
+.review--sights {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .review__list--sights {
     justify-content: flex-start;
@@ -557,9 +563,28 @@
     padding-right: 290px;
     padding-left: 292px;
   }
+}
 
   .review__list-inner--sights {
-    max-width: 210px;
+    max-width: 220px;
+
+    &:first-child {
+      width: 195px;
+    }
+
+    &:nth-child(2) {
+      width: 195px;
+      margin-left: 60px;
+    }
+
+    &:nth-child(3) {
+      width: 115px;
+      margin-left: 137px;
+    }
+
+    &:nth-child(4) {
+      width: 125px;
+      margin-left: 133px;
   }
 }
 
