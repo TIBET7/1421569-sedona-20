@@ -11,7 +11,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 270px;
+    margin-left: 265px;
+  }
+
+  &--photo {
+    margin-bottom: 39px;
   }
 }
 
@@ -24,6 +28,10 @@
 
 .social__item {
   margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {

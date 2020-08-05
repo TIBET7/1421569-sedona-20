@@ -18,6 +18,14 @@
 
   &:last-child {
     margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 59px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -50,7 +58,7 @@
 }
 
 .town-advantages__title {
-  margin: 35px 0 16px;
+  margin: 33px 0 16px;
 
   @include basic-title;
 
@@ -73,8 +81,12 @@
 .town-advantages__description {
   margin: 0;
 
-
   @include basic-text;
+
+  &--souvenirs,
+  &--food {
+    padding-left: 2px;
+  }
 }
 
 .town-advantages__description--food br {
@@ -96,8 +108,8 @@
 
 .town-advantages__item--housing::before {
   position: absolute;
-  left: 20px;
-  top: 25px;
+  left: 21px;
+  top: 24px;
 
   content: "";
   width: 39px;
@@ -114,6 +126,11 @@
     height: 72px;
 
     transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 4px);
+    top: 58px;
   }
 }
 
@@ -138,11 +155,16 @@
 
     transform: translateX(-50%);
   }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 3px);
+    top: 54px;
+  }
 }
 
 .town-advantages__item--food::before {
   position: absolute;
-  left: 16px;
+  left: 18px;
   top: 20px;
 
   content: "";
@@ -160,5 +182,10 @@
     height: 68px;
 
     transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 2px);
+    top: 61px;
   }
 }

@@ -93,7 +93,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 108px 0;
+    padding: 46px 108px 0;
 
     &--bridge {
       padding: 51px 125px 0;
@@ -102,7 +102,11 @@
 }
 
 .advantages__item-number {
-  margin: 12px 0;
+  margin: 11px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
 
   @include basic-text;
 
@@ -110,7 +114,11 @@
   &--road,
   &--tourists {
     margin-top: 11px;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
+    }
   }
 
   &--bridge {
@@ -208,7 +216,6 @@
 
 .advantages__item-title--no-image {
   padding-top: 26px;
-  padding-right: 4px;
 }
 
 .advantages__item-title--road,
@@ -222,7 +229,7 @@
   }
 
   .advantages__item-title--no-image {
-    padding: 39px 49px 0;
+    padding: 43px 49px 0;
   }
 
   .advantages__item-description--no-image {

@@ -1,7 +1,7 @@
 .likes__count {
   position: relative;
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
   padding-left: 37px;
 
   font-size: 14px;
@@ -26,6 +26,7 @@
 
     content: "";
     left: 0;
+    top: -2px;
 
     background: url("../../img/svg/icon-like.svg") no-repeat 0 0;
     opacity: 0.3;

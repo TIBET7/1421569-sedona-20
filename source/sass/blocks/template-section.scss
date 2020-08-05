@@ -26,13 +26,22 @@
   @include basic-title;
 
   &--review {
-    margin-bottom: 37px;
+    margin-bottom: 32px;
     margin-left: 5px;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 37px;
+    }
   }
 
   &--photo {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
+    padding-left: 4px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 32px;
@@ -41,9 +50,11 @@
 
   &--presentation {
     margin-bottom: 29px;
+    margin-left: 3px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
+      margin-bottom: 33px;
     }
 
     @media (min-width: $desktop-width) {
@@ -66,30 +77,49 @@
   @include basic-text;
 
   &--photo {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
     line-height: 24px;
+    padding-left: 5px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+      margin-bottom: 54px;
+    }
   }
 
   &--presentation {
-    line-height: 24px;
     margin-bottom: 0;
+    margin-left: 3px;
+
+    line-height: 24px;
   }
 
   &--review {
     margin-bottom: 0;
+    line-height: 23px;
   }
 
   &--slogan {
+    margin-bottom: 33px;
+    padding-left: 5px;
+
+    line-height: 25px;
+
     @media (min-width: $tablet-width) {
-      margin-top: 34px;
+      margin-top: 30px;
       margin-bottom: 29px;
+      padding-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 3px;
     }
   }
 }
 
 .template-section--review {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   padding: 36px 0 25px;
 
   @media (min-width: $tablet-width) {
@@ -98,8 +128,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 259px 0 265px;
-    margin-bottom: 61px;
+    padding: 0 263px 0 261px;
+    margin-bottom: 57px;
     margin-top: 114px;
   }
 
@@ -122,7 +152,7 @@
 }
 
 .template-section--photo {
-  padding: 33px 0 0;
+  padding: 32px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 64px 105px 25px;
@@ -134,25 +164,34 @@
 }
 
 .template-section--presentation {
-  padding: 12px 3px 12px;
-  margin-bottom: 20px;
+  padding: 9px 3px 12px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 95px 5px;
-    margin-bottom: 31px;
+    padding: 55px 95px 5px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 62px 370px 5px;
-    margin-bottom: 71px;
+    margin-bottom: 69px;
   }
 }
 
 .template-section__title--slogan {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
+  line-height: 27px;
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
     margin: 0 auto;
+
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 6px;
+
+    line-height: 26px;
   }
 }

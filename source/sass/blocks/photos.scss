@@ -67,6 +67,10 @@
 
     &--road {
       margin-top: 16px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 14px;
+      }
     }
 
     &--bridge {
