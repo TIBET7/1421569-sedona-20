@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 120px;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
   }
 
   &--photo {
@@ -69,4 +69,13 @@
       padding: 0;
     }
   }
+}
+
+.copyright__link:hover svg {
+  fill: $light-blue;
+}
+
+.copyright__link:active svg {
+  fill: $black;
+  opacity: 0.3;
 }
