@@ -37,19 +37,29 @@
 .review--introducing::after {
   background-color: $special-gray;
   bottom: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .review--contacts::after {
   background-color: $special-gray;
   bottom: -15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .review--sights::after {
   background-color: $special-gray;
   bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
-
-
 
 .review--textarea {
   margin-bottom: 45px;
@@ -623,5 +633,107 @@
     text-transform: uppercase;
 
     color: $dark-gray;
+  }
+}
+
+/* Decorative horizontal lines */
+
+@media (min-width: $tablet-width) {
+  .review__title--contacts,
+  .review__title--sights,
+  .review__title--textarea {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+
+      content: "";
+      width: 123px;
+      height: 1px;
+
+      background-color: $line-design;
+    }
+  }
+
+  .review__title--textarea {
+    &::before,
+    &::after {
+      top: 9px;
+      background-color: $line-design;
+    }
+
+    &::before {
+      left: -196px;
+    }
+
+    &::after {
+      right: -196px;
+    }
+  }
+
+  .review__title--contacts {
+    &::before,
+    &::after {
+      top: 9px;
+      background-color: $line-design;
+    }
+
+    &::before {
+      left: -183px;
+    }
+
+    &::after {
+      right: -183px;
+    }
+  }
+
+  .review__title--sights {
+    &::before,
+    &::after {
+      top: 26px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__title--contacts,
+  .review__title--sights,
+  .review__title--textarea {
+    position: relative;
+
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+
+  .review__title--contacts,
+  .review__title--textarea {
+    &::before {
+      left: -351px;
+    }
+
+    &::after {
+      right: -351px;
+    }
+  }
+
+  .review__title--sights {
+    &::before {
+      left: -12px;
+    }
+
+    &::after {
+      right: -12px;
+    }
   }
 }
