@@ -34,6 +34,23 @@
   }
 }
 
+.review--introducing::after {
+  background-color: $special-gray;
+  bottom: -5px;
+}
+
+.review--contacts::after {
+  background-color: $special-gray;
+  bottom: -15px;
+}
+
+.review--sights::after {
+  background-color: $special-gray;
+  bottom: 15px;
+}
+
+
+
 .review--textarea {
   margin-bottom: 45px;
 
