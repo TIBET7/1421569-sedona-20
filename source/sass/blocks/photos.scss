@@ -3,7 +3,24 @@
 }
 
 .photos__item-inner {
+  position: relative;
   margin: 0;
+
+  &::after {
+    position: absolute;
+    bottom: -17px;
+    left: -20px;
+    z-index: 1;
+
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: $special-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .photos__item-title {
