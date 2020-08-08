@@ -135,7 +135,7 @@
 
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: -20px;
     z-index: 1;
 
@@ -152,7 +152,24 @@
 }
 
 .template-section--photo {
+  position: relative;
   padding: 32px 0 0;
+
+  &::after {
+    position: absolute;
+    bottom: 23px;
+    left: -20px;
+    z-index: 1;
+
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: $special-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 64px 105px 25px;

@@ -3,7 +3,24 @@
 }
 
 .photos__item-inner {
+  position: relative;
   margin: 0;
+
+  &::after {
+    position: absolute;
+    bottom: -17px;
+    left: -20px;
+    z-index: 1;
+
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: $special-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .photos__item-title {
@@ -28,11 +45,12 @@
 @media (min-width: $tablet-width) {
   .photos__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 324px 324px;
   }
 
-  &:first-child {
+  .photos__item--spaces {
     grid-column: 1 / 3;
+    grid-row: 1 / 2;
   }
 
   .photos__item {
@@ -67,10 +85,6 @@
 
     &--road {
       margin-top: 16px;
-
-      @media (min-width: $tablet-width) {
-        margin-top: 14px;
-      }
     }
 
     &--bridge {
@@ -98,7 +112,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  &:first-child {
+  .photos__item--spaces {
     grid-column: 1 / 4;
   }
 
@@ -122,5 +136,9 @@
   .photos__item-title,
   .photos__item-text {
     color: $white;
+  }
+
+  .photos__item-title--road {
+    margin-top: 14px;
   }
 }
