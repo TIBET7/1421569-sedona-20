@@ -27,11 +27,29 @@
     content: "";
     left: 0;
     top: -2px;
+    cursor: pointer;
 
     background: url("../img/svg/icon-like.svg") no-repeat 0 0;
     opacity: 0.3;
   }
 }
+
+.likes__count:hover::before {
+  opacity: 0.6;
+
+  @media (min-width: $desktop-width) {
+    opacity: 0.8;
+  }
+}
+
+.likes__count:active::before {
+  opacity: 0.8;
+
+  @media (min-width: $desktop-width) {
+    opacity: 0.6;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .likes__count {
