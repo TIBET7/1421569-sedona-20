@@ -226,6 +226,8 @@
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
     display: flex;
+
+    @include list-reset;
   }
 
   .advantages__item-title--no-image {
