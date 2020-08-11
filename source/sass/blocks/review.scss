@@ -218,6 +218,10 @@
   width: 58px;
   height: 57px;
 
+  @media (min-width: $tablet-width) {
+    top: 34px;
+  }
+
   @media (min-width: $desktop-width) {
     top: calc(50% - 29px);
   }
