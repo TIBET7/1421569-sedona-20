@@ -11,7 +11,7 @@ import imagemin from "gulp-imagemin";
 import webp from "gulp-webp";
 import svgstore from "gulp-svgstore";
 import del from "del";
-import uglify from 'gulp-uglify';
+import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin';
 
 
@@ -59,10 +59,10 @@ export const html = () => {
 //JS
 
 export const js = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/script.js')
     .pipe(plumber())
-    .pipe(uglify())
-    .pipe(rename({suffix: '.min'}))
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 };
