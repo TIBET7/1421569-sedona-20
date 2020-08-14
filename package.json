@@ -22,7 +22,6 @@
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
-  "type": "module",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
