@@ -148,12 +148,12 @@ exports.clean = clean;
 
 //Build
 
-const build =  gulp.series(clean, copy, styles, js, sprite, html);
+const build = gulp.series(clean, copy, styles, js, sprite, html);
 
 exports.build = build;
 
 
 //Start
-start = gulp.parallel(build, watch, server);
+start = gulp.series(build, watch, server);
 
 exports.start = start;
