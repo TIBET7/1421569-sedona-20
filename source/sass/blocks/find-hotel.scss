@@ -71,14 +71,6 @@
     background-color: $button-active;
     color: rgba(255, 255, 255, 0.3);
   }
-
-  @media (min-width: $tablet-width) {
-    margin: 0 136px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 353px;
-  }
 }
 
 .find-hotel__link--disabled.button {

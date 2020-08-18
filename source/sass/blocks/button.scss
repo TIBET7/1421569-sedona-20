@@ -46,4 +46,16 @@
       font-size: 21px;
     }
   }
+
+  &--find-hotel {
+    @media (min-width: $tablet-width) {
+      width: 458px;
+      margin-left: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 458px;
+      margin-left: 353px;
+    }
+  }
 }
