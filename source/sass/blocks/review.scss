@@ -336,6 +336,14 @@
   }
 }
 
+.review__input:disabled + .review__input-radio {
+  background: url("../img/svg/radio/radio-disabled.svg");
+}
+
+.review__input:checked:disabled + .review__input-radio {
+  background: url("../img/svg/radio/radio-checked-disabled.svg");
+}
+
 .review__input-checkbox {
   background: url("../img/svg/checkbox/ckeckbox.svg");
 
@@ -363,6 +371,15 @@
     background: url("../img/svg/checkbox/chekbox-checked-active.svg");
   }
 }
+
+.review__input:disabled + .review__input-checkbox {
+  background: url("../img/svg/checkbox/ckeckbox-disabled.svg");
+}
+
+.review__input:checked:disabled + .review__input-checkbox {
+  background: url("../img/svg/checkbox/checkbox-checked-disabled.svg");
+}
+
 
 /* Textarea */
 

@@ -125,7 +125,7 @@ exports.watch = watch;
 
 const copy = () => {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico",
