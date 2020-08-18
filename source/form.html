@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -17,6 +19,7 @@
       </symbol>
     </svg>
 
+    <!-- Container-->
     <div class="container">
 
       <!-- Header -->
@@ -72,14 +75,14 @@
             <div class="form__wrapper">
 
               <!-- Introduce yourself -->
-              <fieldset class="review review--introducing">
-                <legend class="review__title review__title--introducing">
+              <section class="review review--introducing">
+                <h3 class="review__title review__title--introducing">
                   Представьтесь:
-                </legend>
+                </h3>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
                   <label class="review__label review__label--introducing" for="username">Имя*:</label>
-                  <input class="review__input review__input--introducing" id="username" type="text" name="username" placeholder="Петр" required>
+                  <input class="review__input review__input--introducing " id="username" type="text" name="username" placeholder="Петр" required>
                 </div>
 
                 <div class="review__input-wraper review__input-wraper--introducing">
@@ -91,31 +94,31 @@
                   <label class="review__label review__label--introducing" for="user-patronymic">Отчество:</label>
                     <input class="review__input review__input--introducing" id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
                 </div>
-              </fieldset>
+              </section>
 
               <!-- Contacts -->
-              <fieldset class="review review--contacts">
-                <legend class="review__title review__title--contacts">
+              <section class="review review--contacts">
+                <h3 class="review__title review__title--contacts">
                   Контактная информация:
-                </legend>
+                </h3>
                 <div class="review__wrapper">
                   <div class="review__user-phone">
                     <label class="review__label review__label--contacts" for="user-phone"><span class="review__contact">Контактный</span> телефон*:</label>
-                    <input class="review__input review__input--user-phone" id="user-phone" type="tel" name="user-phone" placeholder="Введите телефон" required>
+                    <input class="review__input review__input--user-phone " id="user-phone" type="tel" name="user-phone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}" required>
                   </div>
 
                   <div class="review__user-email">
                     <label class="review__label review__label--contacts" for="user-email">Электронная почта*:</label>
-                    <input class="review__input review__input--user-email" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
+                    <input class="review__input review__input--user-email " id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
                   </div>
                   </div>
-              </fieldset>
+              </section>
 
               <!-- Impressions -->
-              <fieldset class="review review--impressions">
-                <legend class="review__title review__title--impressions">
+              <section class="review review--impressions">
+                <h3 class="review__title review__title--impressions">
                   Ваше общее впечатление:
-                </legend>
+                </h3>
                 <ul class="review__list">
                   <li>
                     <label class="review__label review__label--radio">
@@ -139,13 +142,13 @@
                     </label>
                   </li>
                 </ul>
-              </fieldset>
+              </section>
 
               <!-- Sights-->
-              <fieldset class="review review--sights">
-                <legend class="review__title review__title--sights">
+              <section class="review review--sights">
+                <h3 class="review__title review__title--sights">
                   Посещенные достопримечательности:
-                </legend>
+                </h3>
 
                 <ul class="review__list review__list--sights">
                   <li class="review__list-inner review__list-inner--sights">
@@ -177,17 +180,17 @@
                     </label>
                   </li>
               </ul>
-              </fieldset>
+              </section>
 
               <!-- Emotions-->
-              <fieldset class="review review--textarea">
-                <legend class="review__title review__title--textarea">
+              <section class="review review--textarea">
+                <h3 class="review__title review__title--textarea">
                   Опишите свои эмоции:
-                </legend>
+                </h3>
                 <label class="review__label">
                   <textarea class="review__textarea" name="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
                 </label>
-              </fieldset>
+              </section>
 
               <!-- Send-->
               <div class="sending">

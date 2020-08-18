@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -37,6 +39,8 @@
         </g>
       </symbol>
     </svg>
+
+    <!-- Container-->
     <div class="container">
 
       <!-- Header -->
@@ -210,24 +214,24 @@
           <div class="video-player__controls">
               <div class="video-player__timeline">
                 <div class="video-player__timeline-line"></div>
-                <div class="video-player__timeline-toggle"></div>
+                <button class="video-player__timeline-toggle" aria-label="Прокрутка видео"></button>
               </div>
               <div class="video-player__replay">
-                <button class="video-player__button video-player__button--replay" type="button" title="Повторить видео">
+                <button class="video-player__button video-player__button--replay" type="button" aria-label="Повторить видео">
                   <svg width="16" height="20">
                     <use xlink:href="#replay"></use>
                   </svg>
                 </button>
               </div>
               <div class="video-player__closed-caption">
-                <button class="video-player__button video-player__button--closed-caption" type="button" title="Скрытые субтитры">
+                <button class="video-player__button video-player__button--closed-caption" type="button" aria-label="Скрытые субтитры">
                   <svg width="32" height="20">
                     <use xlink:href="#subtitle"></use>
                   </svg>
                 </button>
               </div>
               <div class="video-player__fullscreen">
-                <button class="video-player__button video-player__button--fullscreen" type="button" title="Полноэкранный режим">
+                <button class="video-player__button video-player__button--fullscreen" type="button" aria-label="Полноэкранный режим">
                   <svg width="20" height="20">
                     <use xlink:href="#fullscreen"></use>
                   </svg>

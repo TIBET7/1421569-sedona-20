@@ -80,3 +80,8 @@
     margin: 0 353px;
   }
 }
+
+.find-hotel__link--disabled.button {
+  background-color: $special-gray;
+  pointer-events: none;
+}

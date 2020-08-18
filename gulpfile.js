@@ -82,7 +82,7 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin ([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
@@ -148,12 +148,12 @@ exports.clean = clean;
 
 //Build
 
-const build =  gulp.series(clean, copy, styles, js, sprite, html);
+const build = gulp.series(clean, copy, styles, js, sprite, webpack, images, html);
 
 exports.build = build;
 
 
 //Start
-start = gulp.parallel(build, watch, server);
+start = gulp.series(build, server, watch);
 
 exports.start = start;
