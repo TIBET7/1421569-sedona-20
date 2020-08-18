@@ -22,12 +22,14 @@
 .social__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   @include list-reset;
 }
 
 .social__item {
   margin-right: 6px;
+  margin-top: 5px;
 
   &:last-child {
     margin-right: 0;

@@ -231,6 +231,7 @@
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .advantages__item-title--no-image {

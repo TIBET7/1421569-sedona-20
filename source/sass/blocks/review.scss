@@ -535,12 +535,15 @@
   .review__wrapper {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .review__user-phone,
   .review__user-email {
     display: flex;
     align-items: center;
+
+    margin-bottom: 5px;
 
     width: 50%;
   }
@@ -583,8 +586,7 @@
   .review__list-inner--sights {
     width: 45%;
 
-    &:nth-child(2),
-    &:nth-child(4) {
+    &:nth-child(2n) {
       margin-left: 45px;
     }
   }
@@ -612,21 +614,25 @@
   @media (min-width: $desktop-width) {
     max-width: 220px;
 
-    &:first-child {
+    &:first-child,
+    &:nth-child(5n) {
       width: 195px;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2),
+    &:nth-child(6n) {
       width: 195px;
       margin-left: 60px;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3),
+    &:nth-child(7n) {
       width: 115px;
       margin-left: 137px;
     }
 
-    &:nth-child(4) {
+    &:nth-child(4),
+    &:nth-child(8n) {
       width: 125px;
       margin-left: 133px;
     }
