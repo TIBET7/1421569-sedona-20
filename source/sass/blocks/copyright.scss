@@ -21,7 +21,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-left: 120px;
+    margin-left: 122px;
     padding-bottom: 3px;
   }
 
@@ -59,7 +59,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 10px;
+      margin-left: 8px;
+      margin-top: 4px;
     }
   }
 

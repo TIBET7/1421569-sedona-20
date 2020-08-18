@@ -21,15 +21,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 33px 0 36px;
+    margin: 30px 0 36px;
 
     &--form {
       padding-top: 0;
-      margin-top: 96px;
+      margin-top: 91px;
     }
 
     &--photo {
-      margin-top: 75px;
+      margin-top: 72px;
       justify-content: flex-start;
     }
   }
@@ -38,18 +38,18 @@
     justify-content: flex-start;
 
     &--photo {
-      margin-top: 120px;
+      margin-top: 117px;
     }
 
     &--form {
-      margin-top: 101px;
+      margin-top: 96px;
     }
   }
 }
 
 .page-footer__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   padding-right: 3px;
 
   font-size: 21px;
@@ -69,6 +69,6 @@
   }
 
   &--photo {
-    margin-bottom: 34px;
+    margin-bottom: 29px;
   }
 }
