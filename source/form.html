@@ -236,19 +236,23 @@
 
     <!-- Modal-failure -->
     <!-- Template-section -->
-    <section class="template-section modal modal--failure">
-      <h2 class="template-section__title">Что-то пошло не так!</h2>
-      <p class="template-section__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <section class="template-section modal modal-failure">
+      <h2 class="template-section__title template-section__title--modal-failure">Что-то пошло не так!</h2>
+      <p class="template-section__text template-section__text--modal-failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button button--failure" type="button">Ок</button>
     </section>
 
 
     <!-- Modal-success -->
     <!-- Template-section -->
-    <section class="template-section modal modal--success">
-      <h2 class="template-section__title">Ваш отзыв отправлен!</h2>
-      <p class="template-section__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="button" type="button">Закрыть окно</button>
+    <section class="template-section modal modal-success">
+      <div class="modal-success__top">
+        <h2 class="template-section__title template-section__title--modal-success">Ваш отзыв отправлен!</h2>
+        <p class="template-section__text template-section__text--modal-success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal-success__bottom">
+        <button class="button button--success" type="button">Закрыть окно</button>
+      </div>
     </section>
 
     <script src="js/script.min.js"></script>

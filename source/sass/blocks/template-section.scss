@@ -61,6 +61,29 @@
       margin-bottom: 33px;
     }
   }
+
+  &--modal-failure {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 15px;
+      margin-bottom: 24px;
+
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &--modal-success {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 33px;
+
+      font-size: 30px;
+      line-height: 26px;
+    }
+  }
 }
 
 .template-section__title--review,
@@ -114,6 +137,19 @@
     @media (min-width: $desktop-width) {
       margin-right: 3px;
     }
+  }
+
+  &--modal-failure {
+    line-height: 24px;
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &--modal-success {
+    line-height: 24px;
   }
 }
 
