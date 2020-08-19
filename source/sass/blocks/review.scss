@@ -380,6 +380,14 @@
   background: url("../img/svg/checkbox/checkbox-checked-disabled.svg");
 }
 
+.review__input:focus + .review__input-checkbox {
+  box-shadow: 0 0 0 2px $black;
+}
+
+.review__input:focus + .review__input-radio {
+  box-shadow: 0 0 0 2px $black;
+  border-radius: 50%;
+}
 
 /* Textarea */
 
