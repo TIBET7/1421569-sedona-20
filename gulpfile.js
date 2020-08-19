@@ -27,7 +27,7 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 exports.server = server;
 
@@ -41,6 +41,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemaps.write("."))
@@ -68,6 +69,7 @@ exports.html = html;
 const js = () => {
   return gulp.src('source/js/script.js')
     .pipe(plumber())
+    .pipe(gulp.dest("build/js"))
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -127,9 +129,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico",
-    "source/*.html"
   ], {
     base: "source"
   })
@@ -154,6 +154,6 @@ exports.build = build;
 
 
 //Start
-start = gulp.series(build, server, watch);
+const start = gulp.series(build, server, watch);
 
 exports.start = start;
