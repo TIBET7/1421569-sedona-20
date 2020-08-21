@@ -1,3 +1,5 @@
+'use.strict';
+
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemaps = require("gulp-sourcemaps");
@@ -13,6 +15,7 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const terser = require('gulp-terser');
 const htmlmin = require('gulp-htmlmin');
+const { use } = require("browser-sync");
 
 
 // Server
