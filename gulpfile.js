@@ -15,7 +15,6 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const terser = require('gulp-terser');
 const htmlmin = require('gulp-htmlmin');
-const { use } = require("browser-sync");
 
 
 // Server

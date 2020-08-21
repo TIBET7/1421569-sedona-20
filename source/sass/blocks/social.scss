@@ -5,6 +5,10 @@
 
   margin-bottom: 40px;
 
+  &--review {
+    margin-bottom: 38px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-left: 110px;
@@ -30,6 +34,14 @@
 .social__item {
   margin-right: 6px;
   margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+
+    &--photo {
+      margin-top: 3px;
+    }
+  }
 
   &:last-child {
     margin-right: 0;

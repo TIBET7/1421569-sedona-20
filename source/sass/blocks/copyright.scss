@@ -23,6 +23,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 122px;
     padding-bottom: 3px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 119px;
+    }
   }
 
   &--photo {

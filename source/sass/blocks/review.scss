@@ -86,6 +86,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 57px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 56px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -110,7 +114,7 @@
 
 .review__input-wraper--introducing {
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     margin-left: 58px;
   }
 
@@ -160,7 +164,7 @@
 }
 
 .review__label--contacts {
-  padding-left: 20px;
+  padding-left: 23px;
 
   @media (min-width: $tablet-width) {
     padding-left: 22px;
@@ -195,7 +199,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     max-width: 315px;
-    margin-left: 12px;
+    margin-left: 9px;
   }
 }
 
@@ -276,7 +280,7 @@
 .review__label--bell,
 .review__label--rocks {
   @media (min-width: $tablet-width) {
-    padding-left: 79px;
+    padding-left: 81px;
   }
 }
 
@@ -417,7 +421,8 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
+    padding: 15px 22px 20px;
   }
 }
 
@@ -477,10 +482,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 26px;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -491,14 +492,8 @@
 
   .review__title--introducing {
     margin-bottom: 56px;
-    margin-left: 56px;
+    margin-left: 60px;
     text-align: left;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .review__title--introducing {
-    margin-bottom: 53px;
   }
 }
 
@@ -632,7 +627,7 @@
   }
 
   .review__title--sights {
-    padding-right: 290px;
+    padding-right: 294px;
     padding-left: 292px;
   }
 }
